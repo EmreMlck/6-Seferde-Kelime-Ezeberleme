@@ -35,6 +35,7 @@
             this.tabHosGeldiniz = new System.Windows.Forms.TabPage();
             this.butonSifre = new System.Windows.Forms.Button();
             this.tabGiris = new System.Windows.Forms.TabPage();
+            this.checkBoxGirisSifreGoster = new System.Windows.Forms.CheckBox();
             this.butonGirisGeri = new System.Windows.Forms.Button();
             this.butonGirisYap = new System.Windows.Forms.Button();
             this.labelUyeGiris = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.labelGirisSifre = new System.Windows.Forms.Label();
             this.labelGirisKullaniciAd = new System.Windows.Forms.Label();
             this.tabKayit = new System.Windows.Forms.TabPage();
+            this.checkBoxKayitSifreGoster = new System.Windows.Forms.CheckBox();
             this.butonKayitOl = new System.Windows.Forms.Button();
             this.butonKayitGeri = new System.Windows.Forms.Button();
             this.textBoxKayitSifre = new System.Windows.Forms.TextBox();
@@ -56,8 +58,6 @@
             this.butonSifreGonder = new System.Windows.Forms.Button();
             this.textBoxSifreMail = new System.Windows.Forms.TextBox();
             this.butonSifreGeri = new System.Windows.Forms.Button();
-            this.checkBoxGirisSifreGoster = new System.Windows.Forms.CheckBox();
-            this.checkBoxKayitSifreGoster = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabHosGeldiniz.SuspendLayout();
             this.tabGiris.SuspendLayout();
@@ -158,6 +158,16 @@
             this.tabGiris.UseVisualStyleBackColor = true;
             this.tabGiris.Click += new System.EventHandler(this.tabGiris_Click);
             // 
+            // checkBoxGirisSifreGoster
+            // 
+            this.checkBoxGirisSifreGoster.AutoSize = true;
+            this.checkBoxGirisSifreGoster.Location = new System.Drawing.Point(399, 307);
+            this.checkBoxGirisSifreGoster.Name = "checkBoxGirisSifreGoster";
+            this.checkBoxGirisSifreGoster.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxGirisSifreGoster.TabIndex = 8;
+            this.checkBoxGirisSifreGoster.UseVisualStyleBackColor = true;
+            this.checkBoxGirisSifreGoster.CheckedChanged += new System.EventHandler(this.butonGirisSifreGoster_CheckedChanged);
+            // 
             // butonGirisGeri
             // 
             this.butonGirisGeri.BackColor = System.Drawing.Color.DimGray;
@@ -251,6 +261,16 @@
             this.tabKayit.Text = "Kayıt ";
             this.tabKayit.UseVisualStyleBackColor = true;
             // 
+            // checkBoxKayitSifreGoster
+            // 
+            this.checkBoxKayitSifreGoster.AutoSize = true;
+            this.checkBoxKayitSifreGoster.Location = new System.Drawing.Point(400, 301);
+            this.checkBoxKayitSifreGoster.Name = "checkBoxKayitSifreGoster";
+            this.checkBoxKayitSifreGoster.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxKayitSifreGoster.TabIndex = 12;
+            this.checkBoxKayitSifreGoster.UseVisualStyleBackColor = true;
+            this.checkBoxKayitSifreGoster.CheckedChanged += new System.EventHandler(this.checkBoxKayitSifreGoster_CheckedChanged);
+            // 
             // butonKayitOl
             // 
             this.butonKayitOl.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -261,6 +281,7 @@
             this.butonKayitOl.TabIndex = 11;
             this.butonKayitOl.Text = "KAYIT OL";
             this.butonKayitOl.UseVisualStyleBackColor = true;
+            this.butonKayitOl.Click += new System.EventHandler(this.butonKayitOl_Click);
             // 
             // butonKayitGeri
             // 
@@ -399,26 +420,6 @@
             this.butonSifreGeri.Text = "Geri ";
             this.butonSifreGeri.UseVisualStyleBackColor = false;
             this.butonSifreGeri.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // checkBoxGirisSifreGoster
-            // 
-            this.checkBoxGirisSifreGoster.AutoSize = true;
-            this.checkBoxGirisSifreGoster.Location = new System.Drawing.Point(399, 307);
-            this.checkBoxGirisSifreGoster.Name = "checkBoxGirisSifreGoster";
-            this.checkBoxGirisSifreGoster.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxGirisSifreGoster.TabIndex = 8;
-            this.checkBoxGirisSifreGoster.UseVisualStyleBackColor = true;
-            this.checkBoxGirisSifreGoster.CheckedChanged += new System.EventHandler(this.butonGirisSifreGoster_CheckedChanged);
-            // 
-            // checkBoxKayitSifreGoster
-            // 
-            this.checkBoxKayitSifreGoster.AutoSize = true;
-            this.checkBoxKayitSifreGoster.Location = new System.Drawing.Point(400, 301);
-            this.checkBoxKayitSifreGoster.Name = "checkBoxKayitSifreGoster";
-            this.checkBoxKayitSifreGoster.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxKayitSifreGoster.TabIndex = 12;
-            this.checkBoxKayitSifreGoster.UseVisualStyleBackColor = true;
-            this.checkBoxKayitSifreGoster.CheckedChanged += new System.EventHandler(this.checkBoxKayitSifreGoster_CheckedChanged);
             // 
             // Form1
             // 
