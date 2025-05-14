@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
 namespace _6_Seferde_Kelime_Ezeberleme
 {
@@ -192,6 +193,52 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             if (textBoxSifreMail.Text== "....@gmail.com")
                 textBoxSifreMail.Text = "";
+        }
+
+        private void butonKayitOl_Click(object sender, EventArgs e)
+        {
+            string ad = textBoxKayitAd.Text;
+            string sifre = textBoxKayitSifre.Text;
+
+            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("sp_KullaniciKayit", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@kullaniciAdi", ad);
+                    cmd.Parameters.AddWithValue("@sifre", sifre);
+
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            int kullaniciId = (int)reader["kullaniciId"];
+                            string kullaniciAdi = reader["kullaniciAdi"].ToString();
+
+                            MessageBox.Show($"Kayıt başarılı. Kullanıcı ID: {kullaniciId}, Ad: {kullaniciAdi}");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kayıt başarısız...");
+                        }
+
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hata: " + ex.Message);
+                    }
+                }
+            }
+
         }
     }
 }
