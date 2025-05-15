@@ -222,6 +222,7 @@
             this.textBoxGirisAd.ShortcutsEnabled = false;
             this.textBoxGirisAd.Size = new System.Drawing.Size(217, 30);
             this.textBoxGirisAd.TabIndex = 2;
+            this.textBoxGirisAd.TextChanged += new System.EventHandler(this.textBoxGirisAd_TextChanged);
             // 
             // labelGirisSifre
             // 
