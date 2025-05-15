@@ -109,9 +109,59 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void butonGirisYap_Click(object sender, EventArgs e)
         {
+            string ad = textBoxGirisAd.Text.Trim();
+            string sifre = textBoxGirisSifre.Text.Trim(); 
 
+            if (string.IsNullOrEmpty(ad) || string.IsNullOrEmpty(sifre))
+            {
+                MessageBox.Show("Kullanıcı adı ve şifre boş geçilemez!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("sp_KullaniciGiris", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@kullaniciAdi", ad);
+                    cmd.Parameters.AddWithValue("@sifre", sifre);
+
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            int kullaniciId = (int)reader["kullaniciId"];
+                            string kullaniciAdi = reader["kullaniciAdi"].ToString();
+
+                            this.Hide();
+                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran();
+                            anaEkran.kullaniciAdi = textBoxGirisAd.Text;
+                            anaEkran.FormClosed += (s, args) => this.Close();
+                            anaEkran.Show();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı adı veya şifre hatalı!", "Giriş Başarısız", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hata: " + ex.Message);
+                    }
+                }
+            }                     
         }
-
+            
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -175,7 +225,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             if(checkBoxKayitSifreGoster.Checked)
             {
                 textBoxKayitSifre.PasswordChar = '\0';
-
+                
             }
             else
             {
@@ -185,8 +235,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void textBoxSifreMail_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBoxSifreMail.Text))
-                textBoxSifreMail.Text = "....@gmail.com";
+            
         }
 
         private void textBoxSifreMail_Enter(object sender, EventArgs e)
@@ -208,7 +257,6 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 using (SqlCommand cmd = new SqlCommand("sp_KullaniciKayit", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-
                     cmd.Parameters.AddWithValue("@kullaniciAdi", ad);
                     cmd.Parameters.AddWithValue("@sifre", sifre);
 
@@ -223,7 +271,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                             int kullaniciId = (int)reader["kullaniciId"];
                             string kullaniciAdi = reader["kullaniciAdi"].ToString();
 
-                            MessageBox.Show($"Kayıt başarılı. Kullanıcı ID: {kullaniciId}, Ad: {kullaniciAdi}");
+                            MessageBox.Show($"Kayıt Başarılı. Kullanıcı ID: {kullaniciId}");
                         }
                         else
                         {
@@ -234,11 +282,21 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Hata: " + ex.Message);
+                        MessageBox.Show("Hata: " + ex.Message);                     
                     }
                 }
             }
 
+        }
+
+        private void textBoxGirisAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void butonAnaEkranCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
