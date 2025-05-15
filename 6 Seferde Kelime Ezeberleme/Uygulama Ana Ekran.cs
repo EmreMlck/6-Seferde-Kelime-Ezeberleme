@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,7 +21,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void Uygulama_Ana_Ekran_Load(object sender, EventArgs e)
         {
-            labelUstteAdGosterim.Text = "Kullanıcı: " +kullaniciAdi;
+                     
+            labelUstteAdGosterim.Text = "👋 Hoş Geldin " + kullaniciAdi;
         }
 
         private void anaEkranKullaniciGosterimi_TextChanged(object sender, EventArgs e)
@@ -31,6 +33,24 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void butonAnaEkranCikis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 girisFormu = new Form1();
+            girisFormu.Show();
+           
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+           
         }
     }
 }

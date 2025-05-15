@@ -139,7 +139,13 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         {
                             int kullaniciId = (int)reader["kullaniciId"];
                             string kullaniciAdi = reader["kullaniciAdi"].ToString();
-                          
+
+                            this.Hide();
+                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran();
+                            anaEkran.kullaniciAdi = textBoxGirisAd.Text;
+                            anaEkran.FormClosed += (s, args) => this.Close();
+                            anaEkran.Show();
+
                         }
                         else
                         {
@@ -153,12 +159,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         MessageBox.Show("Hata: " + ex.Message);
                     }
                 }
-            }
-            this.Hide(); 
-            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran();
-            anaEkran.kullaniciAdi = textBoxGirisAd.Text;
-            anaEkran.FormClosed += (s, args) => this.Close(); 
-            anaEkran.Show();
+            }                     
         }
             
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -291,6 +292,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void textBoxGirisAd_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void butonAnaEkranCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
