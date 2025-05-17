@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabHosGeldiniz = new System.Windows.Forms.TabPage();
+            this.butonAnaEkranCikis = new System.Windows.Forms.Button();
             this.butonSifre = new System.Windows.Forms.Button();
             this.tabGiris = new System.Windows.Forms.TabPage();
             this.checkBoxGirisSifreGoster = new System.Windows.Forms.CheckBox();
@@ -58,7 +59,6 @@
             this.butonSifreGonder = new System.Windows.Forms.Button();
             this.textBoxSifreMail = new System.Windows.Forms.TextBox();
             this.butonSifreGeri = new System.Windows.Forms.Button();
-            this.butonAnaEkranCikis = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabHosGeldiniz.SuspendLayout();
             this.tabGiris.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             this.butonGiris.BackColor = System.Drawing.Color.LightGray;
             this.butonGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonGiris.Location = new System.Drawing.Point(183, 197);
+            this.butonGiris.Location = new System.Drawing.Point(183, 182);
             this.butonGiris.Name = "butonGiris";
             this.butonGiris.Size = new System.Drawing.Size(168, 62);
             this.butonGiris.TabIndex = 0;
@@ -82,7 +82,7 @@
             // 
             this.butonKayit.BackColor = System.Drawing.Color.LightGray;
             this.butonKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonKayit.Location = new System.Drawing.Point(183, 265);
+            this.butonKayit.Location = new System.Drawing.Point(183, 250);
             this.butonKayit.Name = "butonKayit";
             this.butonKayit.Size = new System.Drawing.Size(168, 62);
             this.butonKayit.TabIndex = 1;
@@ -115,6 +115,7 @@
             // 
             // tabHosGeldiniz
             // 
+            this.tabHosGeldiniz.BackColor = System.Drawing.Color.Transparent;
             this.tabHosGeldiniz.Controls.Add(this.butonAnaEkranCikis);
             this.tabHosGeldiniz.Controls.Add(this.butonSifre);
             this.tabHosGeldiniz.Controls.Add(this.butonKayit);
@@ -126,14 +127,26 @@
             this.tabHosGeldiniz.Size = new System.Drawing.Size(540, 461);
             this.tabHosGeldiniz.TabIndex = 0;
             this.tabHosGeldiniz.Text = "Hoş Geldiniz";
-            this.tabHosGeldiniz.UseVisualStyleBackColor = true;
             this.tabHosGeldiniz.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // butonAnaEkranCikis
+            // 
+            this.butonAnaEkranCikis.BackColor = System.Drawing.Color.Firebrick;
+            this.butonAnaEkranCikis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butonAnaEkranCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.butonAnaEkranCikis.Location = new System.Drawing.Point(214, 383);
+            this.butonAnaEkranCikis.Name = "butonAnaEkranCikis";
+            this.butonAnaEkranCikis.Size = new System.Drawing.Size(109, 58);
+            this.butonAnaEkranCikis.TabIndex = 7;
+            this.butonAnaEkranCikis.Text = "ÇIKIŞ";
+            this.butonAnaEkranCikis.UseVisualStyleBackColor = false;
+            this.butonAnaEkranCikis.Click += new System.EventHandler(this.butonAnaEkranCikis_Click);
             // 
             // butonSifre
             // 
             this.butonSifre.BackColor = System.Drawing.Color.DimGray;
             this.butonSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonSifre.Location = new System.Drawing.Point(183, 333);
+            this.butonSifre.Location = new System.Drawing.Point(183, 318);
             this.butonSifre.Name = "butonSifre";
             this.butonSifre.Size = new System.Drawing.Size(168, 44);
             this.butonSifre.TabIndex = 3;
@@ -423,19 +436,6 @@
             this.butonSifreGeri.Text = "Geri ";
             this.butonSifreGeri.UseVisualStyleBackColor = false;
             this.butonSifreGeri.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // butonAnaEkranCikis
-            // 
-            this.butonAnaEkranCikis.BackColor = System.Drawing.Color.Firebrick;
-            this.butonAnaEkranCikis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butonAnaEkranCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonAnaEkranCikis.Location = new System.Drawing.Point(214, 383);
-            this.butonAnaEkranCikis.Name = "butonAnaEkranCikis";
-            this.butonAnaEkranCikis.Size = new System.Drawing.Size(109, 58);
-            this.butonAnaEkranCikis.TabIndex = 7;
-            this.butonAnaEkranCikis.Text = "ÇIKIŞ";
-            this.butonAnaEkranCikis.UseVisualStyleBackColor = false;
-            this.butonAnaEkranCikis.Click += new System.EventHandler(this.butonAnaEkranCikis_Click);
             // 
             // Form1
             // 
