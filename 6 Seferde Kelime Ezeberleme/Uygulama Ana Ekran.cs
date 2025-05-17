@@ -52,5 +52,13 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
            
         }
+
+        private void butonGiris_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme();
+            kelimeEklemeyeGec.FormClosed += (s, args) => this.Close();
+            kelimeEklemeyeGec.Show();
+        }
     }
 }

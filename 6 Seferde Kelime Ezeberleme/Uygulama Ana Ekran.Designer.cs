@@ -40,11 +40,11 @@
             // labelUstteAdGosterim
             // 
             this.labelUstteAdGosterim.AutoSize = true;
-            this.labelUstteAdGosterim.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelUstteAdGosterim.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelUstteAdGosterim.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelUstteAdGosterim.Location = new System.Drawing.Point(64, 84);
             this.labelUstteAdGosterim.Name = "labelUstteAdGosterim";
-            this.labelUstteAdGosterim.Size = new System.Drawing.Size(127, 44);
+            this.labelUstteAdGosterim.Size = new System.Drawing.Size(113, 39);
             this.labelUstteAdGosterim.TabIndex = 0;
             this.labelUstteAdGosterim.Text = "XXXX";
             this.labelUstteAdGosterim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,11 +70,11 @@
             this.groupBox1.Size = new System.Drawing.Size(617, 100);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // butonGiris
             // 
             this.butonGiris.BackColor = System.Drawing.Color.LightGray;
+            this.butonGiris.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butonGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.butonGiris.Location = new System.Drawing.Point(25, 199);
             this.butonGiris.Name = "butonGiris";
@@ -82,10 +82,12 @@
             this.butonGiris.TabIndex = 8;
             this.butonGiris.Text = "🔤 Kelime Ekle ";
             this.butonGiris.UseVisualStyleBackColor = false;
+            this.butonGiris.Click += new System.EventHandler(this.butonGiris_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(350, 199);
             this.button2.Name = "button2";
@@ -97,6 +99,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(25, 335);
             this.button1.Name = "button1";
@@ -108,6 +111,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.Location = new System.Drawing.Point(350, 335);
             this.button3.Name = "button3";
@@ -120,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(673, 597);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);

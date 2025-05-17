@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
+using System.IO;
+using Newtonsoft.Json;
+using System.Data.SqlClient;
 
 namespace _6_Seferde_Kelime_Ezeberleme
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -47,7 +51,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            
+
             tabControl.Appearance = TabAppearance.FlatButtons;
             tabControl.ItemSize = new Size(0, 1);
             tabControl.SizeMode = TabSizeMode.Fixed;
@@ -160,6 +164,49 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                 }
             }                     
+        }
+
+        public void JsondanDbyeAktar()
+        {
+            string json = File.ReadAllText("sozluk.json");
+            var sozluk = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+
+            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                try
+                {
+                    foreach (var item in sozluk)
+                    {
+                        string tr = item.Key;
+                        string en = item.Value;
+
+                        string sqlDb = "INSERT INTO Kelimeler (trKelimeAdi, ingKelimeAdi) VALUES(@tr, @en)";
+                        using (SqlCommand cmd = new SqlCommand(sqlDb, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@tr", tr);
+                            cmd.Parameters.AddWithValue("@en", en);
+                            cmd.ExecuteNonQuery();
+
+                        }
+                    }
+                    MessageBox.Show("50 kelime başarıyla eklendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (SqlException ex)
+                {
+                    if (ex.Number == 2627 || ex.Number == 2601) // UNIQUE hataları
+                    {
+                        MessageBox.Show("Bu kelime zaten var, eklenemez!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hata oluştu.");
+                    }
+                }
+
+            }
         }
             
         private void pictureBox1_Click(object sender, EventArgs e)
