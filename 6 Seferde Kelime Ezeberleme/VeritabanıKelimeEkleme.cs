@@ -12,7 +12,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
     internal class VeritabanıKelimeEkleme
     {
         string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
-        public void kelimeEkleme(string en, string tr)
+        public void kelimeEkleme(string tr, string en, int kategoriId)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -20,14 +20,16 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
                 try
                 {
-                    string eklenecek = "INSERT INTO Kelimeler(trKelimeAdi, ingKelimeAdi) VALUES(@tr, @en)";
+
+                    string eklenecek = "INSERT INTO Kelimeler(trKelimeAdi, ingKelimeAdi, kategoriId) VALUES(@tr, @en, @kategoriId)";
                     using (SqlCommand cmd = new SqlCommand(eklenecek, conn))
                     {
                         cmd.Parameters.AddWithValue("@tr", tr);
                         cmd.Parameters.AddWithValue("@en", en);
+                        cmd.Parameters.AddWithValue("@kategoriId", kategoriId);
                         cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("Kelime Eklendi!");
+                        MessageBox.Show("Kelime ve Kategori Eklendi!");
                     }
                 }
                 catch (SqlException ex)
