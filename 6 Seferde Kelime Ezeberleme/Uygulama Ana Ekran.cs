@@ -58,7 +58,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             this.Hide();
             KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme();
             kelimeEklemeyeGec.FormClosed += (s, args) => this.Close();
-            kelimeEklemeyeGec.Show();
+            kelimeEklemeyeGec.Show();           
         }
     }
 }

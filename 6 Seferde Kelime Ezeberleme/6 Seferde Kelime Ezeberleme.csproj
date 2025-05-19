@@ -49,12 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kategori.cs" />
     <Compile Include="KelimeEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KelimeEkleme.Designer.cs">
       <DependentUpon>KelimeEkleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="KelimeJson.cs" />
     <Compile Include="KullanıcıKayıt-Giriş.cs">
       <SubType>Form</SubType>
     </Compile>

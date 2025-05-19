@@ -168,8 +168,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         public void JsondanDbyeAktar()
         {
-            string json = File.ReadAllText("sozluk.json");
-            var sozluk = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            var json = File.ReadAllText("sozluk.json");
+            var sozluk = JsonConvert.DeserializeObject<List<KelimeJson>>(json);
 
             string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
 
@@ -178,16 +178,16 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 conn.Open();
                 try
                 {
-                    foreach (var item in sozluk)
+                    foreach (var kelime in sozluk)
                     {
-                        string tr = item.Key;
-                        string en = item.Value;
 
-                        string sqlDb = "INSERT INTO Kelimeler (trKelimeAdi, ingKelimeAdi) VALUES(@tr, @en)";
+                        string sqlDb = "INSERT INTO Kelimeler (trKelimeAdi, ingKelimeAdi, kategoriId) VALUES(@tr, @en, @kategoriId)";
                         using (SqlCommand cmd = new SqlCommand(sqlDb, conn))
                         {
-                            cmd.Parameters.AddWithValue("@tr", tr);
-                            cmd.Parameters.AddWithValue("@en", en);
+                            cmd.Parameters.AddWithValue("@tr", kelime.trKelimeAdi);
+                            cmd.Parameters.AddWithValue("@en", kelime.ingKelimeAdi);
+                            cmd.Parameters.AddWithValue("@kategoriId", kelime.kategoriId);
+
                             cmd.ExecuteNonQuery();
 
                         }

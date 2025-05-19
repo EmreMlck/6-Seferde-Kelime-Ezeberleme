@@ -37,6 +37,8 @@
             this.butonGirisGeri = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxKelimeKategori = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,9 +55,9 @@
             // butonKelimeEkle
             // 
             this.butonKelimeEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonKelimeEkle.Location = new System.Drawing.Point(201, 476);
+            this.butonKelimeEkle.Location = new System.Drawing.Point(201, 494);
             this.butonKelimeEkle.Name = "butonKelimeEkle";
-            this.butonKelimeEkle.Size = new System.Drawing.Size(149, 61);
+            this.butonKelimeEkle.Size = new System.Drawing.Size(145, 43);
             this.butonKelimeEkle.TabIndex = 4;
             this.butonKelimeEkle.Text = "EKLE";
             this.butonKelimeEkle.UseVisualStyleBackColor = true;
@@ -63,19 +65,19 @@
             // 
             // textBoxTurkceEkle
             // 
-            this.textBoxTurkceEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxTurkceEkle.Location = new System.Drawing.Point(201, 208);
+            this.textBoxTurkceEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxTurkceEkle.Location = new System.Drawing.Point(201, 216);
             this.textBoxTurkceEkle.Name = "textBoxTurkceEkle";
-            this.textBoxTurkceEkle.Size = new System.Drawing.Size(291, 64);
+            this.textBoxTurkceEkle.Size = new System.Drawing.Size(440, 55);
             this.textBoxTurkceEkle.TabIndex = 5;
             this.textBoxTurkceEkle.TextChanged += new System.EventHandler(this.textBoxTurkceEkle_TextChanged);
             // 
             // textBoxIngEkle
             // 
-            this.textBoxIngEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxIngEkle.Location = new System.Drawing.Point(201, 337);
+            this.textBoxIngEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxIngEkle.Location = new System.Drawing.Point(201, 310);
             this.textBoxIngEkle.Name = "textBoxIngEkle";
-            this.textBoxIngEkle.Size = new System.Drawing.Size(291, 64);
+            this.textBoxIngEkle.Size = new System.Drawing.Size(440, 55);
             this.textBoxIngEkle.TabIndex = 6;
             // 
             // label2
@@ -92,19 +94,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(24, 356);
+            this.label3.Location = new System.Drawing.Point(24, 321);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 39);
             this.label3.TabIndex = 8;
             this.label3.Text = "İngilizce:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // butonGirisGeri
             // 
             this.butonGirisGeri.BackColor = System.Drawing.Color.DimGray;
             this.butonGirisGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonGirisGeri.Location = new System.Drawing.Point(510, 476);
+            this.butonGirisGeri.Location = new System.Drawing.Point(510, 494);
             this.butonGirisGeri.Name = "butonGirisGeri";
-            this.butonGirisGeri.Size = new System.Drawing.Size(131, 61);
+            this.butonGirisGeri.Size = new System.Drawing.Size(131, 43);
             this.butonGirisGeri.TabIndex = 9;
             this.butonGirisGeri.Text = "GERİ";
             this.butonGirisGeri.UseVisualStyleBackColor = false;
@@ -123,13 +126,36 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(306, 121);
+            this.button1.Location = new System.Drawing.Point(325, 121);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 48);
+            this.button1.Size = new System.Drawing.Size(163, 48);
             this.button1.TabIndex = 12;
             this.button1.Text = "YÜKLE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBoxKelimeKategori
+            // 
+            this.comboBoxKelimeKategori.DropDownHeight = 95;
+            this.comboBoxKelimeKategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxKelimeKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBoxKelimeKategori.FormattingEnabled = true;
+            this.comboBoxKelimeKategori.IntegralHeight = false;
+            this.comboBoxKelimeKategori.Location = new System.Drawing.Point(306, 407);
+            this.comboBoxKelimeKategori.Name = "comboBoxKelimeKategori";
+            this.comboBoxKelimeKategori.Size = new System.Drawing.Size(335, 46);
+            this.comboBoxKelimeKategori.TabIndex = 14;
+            this.comboBoxKelimeKategori.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(24, 410);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(267, 39);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Kelime Kategori:";
             // 
             // KelimeEkleme
             // 
@@ -137,6 +163,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(673, 597);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.comboBoxKelimeKategori);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.butonGirisGeri);
@@ -165,5 +193,7 @@
         private System.Windows.Forms.Button butonGirisGeri;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxKelimeKategori;
+        private System.Windows.Forms.Label label5;
     }
 }
