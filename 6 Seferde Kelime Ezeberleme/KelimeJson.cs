@@ -10,7 +10,10 @@ namespace _6_Seferde_Kelime_Ezeberleme
     {
         public string ingKelimeAdi {  get; set; }
         public string trKelimeAdi { get; set; }
+        public string resim { get; set; }
         public int kategoriId { get; set; }
+        
+
 
     }
 }

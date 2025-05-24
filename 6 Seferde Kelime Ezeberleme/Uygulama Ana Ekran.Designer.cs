@@ -70,6 +70,7 @@
             this.groupBox1.Size = new System.Drawing.Size(617, 100);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // butonGiris
             // 
@@ -119,6 +120,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "📊 Başarı Raporu ";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Uygulama_Ana_Ekran
             // 
@@ -135,6 +137,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Uygulama_Ana_Ekran";
             this.Text = "Uygulama_Ana_Ekran";
+            this.Activated += new System.EventHandler(this.Uygulama_Ana_Ekran_Activated);
             this.Load += new System.EventHandler(this.Uygulama_Ana_Ekran_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
