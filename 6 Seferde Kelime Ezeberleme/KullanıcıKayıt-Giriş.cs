@@ -145,8 +145,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                             string kullaniciAdi = reader["kullaniciAdi"].ToString();
 
                             this.Hide();
-                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran();
-                            anaEkran.kullaniciAdi = textBoxGirisAd.Text;
+                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran(kullaniciAdi);                          
                             anaEkran.FormClosed += (s, args) => this.Close();
                             anaEkran.Show();
 
@@ -180,12 +179,12 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 {
                     foreach (var kelime in sozluk)
                     {
-
-                        string sqlDb = "INSERT INTO Kelimeler (trKelimeAdi, ingKelimeAdi, kategoriId) VALUES(@tr, @en, @kategoriId)";
+                        string sqlDb = "INSERT INTO Kelimeler (trKelimeAdi, ingKelimeAdi, resim, kategoriId) VALUES(@tr, @en, @resim, @kategoriId)";
                         using (SqlCommand cmd = new SqlCommand(sqlDb, conn))
                         {
                             cmd.Parameters.AddWithValue("@tr", kelime.trKelimeAdi);
                             cmd.Parameters.AddWithValue("@en", kelime.ingKelimeAdi);
+                            cmd.Parameters.AddWithValue("@resim", kelime.resim);
                             cmd.Parameters.AddWithValue("@kategoriId", kelime.kategoriId);
 
                             cmd.ExecuteNonQuery();
@@ -345,5 +344,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             Application.Exit();
         }
+        
+
     }
 }

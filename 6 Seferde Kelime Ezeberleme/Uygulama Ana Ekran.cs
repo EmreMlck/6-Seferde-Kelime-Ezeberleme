@@ -14,15 +14,15 @@ namespace _6_Seferde_Kelime_Ezeberleme
     public partial class Uygulama_Ana_Ekran : Form
     {
         public string kullaniciAdi { get; set; }
-        public Uygulama_Ana_Ekran()
+        public Uygulama_Ana_Ekran(string kullaniciAdi)
         {
             InitializeComponent();
+            this.kullaniciAdi = kullaniciAdi;
         }
 
         private void Uygulama_Ana_Ekran_Load(object sender, EventArgs e)
-        {
-                     
-            labelUstteAdGosterim.Text = "👋 Hoş Geldin " + kullaniciAdi;
+        {      
+            
         }
 
         private void anaEkranKullaniciGosterimi_TextChanged(object sender, EventArgs e)
@@ -56,9 +56,27 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonGiris_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme();
+            KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme(kullaniciAdi);
             kelimeEklemeyeGec.FormClosed += (s, args) => this.Close();
             kelimeEklemeyeGec.Show();           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Basarim basarimaGec = new Basarim(kullaniciAdi);
+            basarimaGec.FormClosed += (s, args) => this.Close();
+            basarimaGec.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Uygulama_Ana_Ekran_Activated(object sender, EventArgs e)
+        {
+            labelUstteAdGosterim.Text = "👋 Hoş Geldin " +kullaniciAdi;
         }
     }
 }

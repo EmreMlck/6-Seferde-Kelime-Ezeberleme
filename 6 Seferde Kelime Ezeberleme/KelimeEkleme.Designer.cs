@@ -61,7 +61,7 @@
             this.butonKelimeEkle.TabIndex = 4;
             this.butonKelimeEkle.Text = "EKLE";
             this.butonKelimeEkle.UseVisualStyleBackColor = true;
-            this.butonKelimeEkle.Click += new System.EventHandler(this.butonKelimeEkle_Click);
+            this.butonKelimeEkle.Click += new System.EventHandler(this.butonKelimeEkle_ClickAsync);
             // 
             // textBoxTurkceEkle
             // 

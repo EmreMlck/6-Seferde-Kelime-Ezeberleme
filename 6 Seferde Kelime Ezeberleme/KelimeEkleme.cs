@@ -5,18 +5,23 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _6_Seferde_Kelime_Ezeberleme
 {
     public partial class KelimeEkleme : Form
     {
-        public KelimeEkleme()
+        string kullaniciAdi;
+        public KelimeEkleme(string kullaniciAdi)
         {
             InitializeComponent();
+            this.kullaniciAdi = kullaniciAdi;
         }
 
         private void KelimeEkleme_Load(object sender, EventArgs e)
@@ -46,29 +51,51 @@ namespace _6_Seferde_Kelime_Ezeberleme
             comboBoxKelimeKategori.DisplayMember = "kategoriAdi";
             comboBoxKelimeKategori.ValueMember = "kategoriId";
         }
+        private async Task<string> UnsplashResimGetir(string kelime)
+        {
+            string accessKey = "q8satxSntbbgpXxUlC3Mt5WKhJi87dbrvPFIpocOCxo";  
+            string url = $"https://api.unsplash.com/search/photos?query={kelime}&client_id={accessKey}&per_page=1";
+
+            using (HttpClient client = new HttpClient())
+            {
+                var response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    dynamic json = JsonConvert.DeserializeObject(jsonString);
+                    if (json.results.Count > 0)
+                    {
+                        return json.results[0].urls.small.ToString();
+                    }
+                }
+            }
+            return null;
+        }
+
 
         private void textBoxTurkceEkle_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void butonKelimeEkle_Click(object sender, EventArgs e)
+        private async void butonKelimeEkle_ClickAsync(object sender, EventArgs e)
         {
-            string tr = textBoxTurkceEkle.Text.Trim();
-            string en = textBoxIngEkle.Text.Trim();
-            int kategoriId = (int)comboBoxKelimeKategori.SelectedValue;
-            
-            if(comboBoxKelimeKategori == null)
+            if (comboBoxKelimeKategori.SelectedItem == null)
             {
                 MessageBox.Show("Kategori kısmı boş bırakılamaz!");
                 return;
             }
 
+            string tr = textBoxTurkceEkle.Text.Trim();
+            string en = textBoxIngEkle.Text.Trim();
+            int kategoriId = (int)comboBoxKelimeKategori.SelectedValue;
+
             if (!string.IsNullOrEmpty(tr) && !string.IsNullOrEmpty(en))
             {
+                string resim = await UnsplashResimGetir(tr);  
+
                 VeritabanıKelimeEkleme dbEkleme = new VeritabanıKelimeEkleme();
-                dbEkleme.kelimeEkleme(tr, en, kategoriId);
-                
+                dbEkleme.kelimeEkleme(tr, en, resim, kategoriId);
             }
             else
             {
@@ -79,10 +106,12 @@ namespace _6_Seferde_Kelime_Ezeberleme
             textBoxIngEkle.Text = "";
         }
 
+
+
         private void butonGirisGeri_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Uygulama_Ana_Ekran anaEkranaGec = new Uygulama_Ana_Ekran();
+            Uygulama_Ana_Ekran anaEkranaGec = new Uygulama_Ana_Ekran(kullaniciAdi);
             anaEkranaGec.FormClosed += (s, args) => this.Close();
             anaEkranaGec.Show();
         }
