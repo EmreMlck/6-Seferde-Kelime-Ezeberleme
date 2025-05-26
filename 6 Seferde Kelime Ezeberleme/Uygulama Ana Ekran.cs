@@ -78,5 +78,13 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             labelUstteAdGosterim.Text = "👋 Hoş Geldin " +kullaniciAdi;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Kelimeler kelimelereGec = new Kelimeler(kullaniciAdi);
+            kelimelereGec.FormClosed += (s, args) => this.Close();
+            kelimelereGec.Show();
+        }
     }
 }
