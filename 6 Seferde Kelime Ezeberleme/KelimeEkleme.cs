@@ -92,7 +92,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
             if (!string.IsNullOrEmpty(tr) && !string.IsNullOrEmpty(en))
             {
-                string resim = await UnsplashResimGetir(tr);  
+                string resim = await UnsplashResimGetir(en);  
 
                 VeritabanıKelimeEkleme dbEkleme = new VeritabanıKelimeEkleme();
                 dbEkleme.kelimeEkleme(tr, en, resim, kategoriId);
