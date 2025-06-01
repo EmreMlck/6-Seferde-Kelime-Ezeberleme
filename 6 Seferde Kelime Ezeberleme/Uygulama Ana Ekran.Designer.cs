@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelUstteAdGosterim
@@ -56,7 +57,7 @@
             this.butonAnaEkranCikis.BackColor = System.Drawing.Color.Firebrick;
             this.butonAnaEkranCikis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butonAnaEkranCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonAnaEkranCikis.Location = new System.Drawing.Point(350, 471);
+            this.butonAnaEkranCikis.Location = new System.Drawing.Point(25, 588);
             this.butonAnaEkranCikis.Name = "butonAnaEkranCikis";
             this.butonAnaEkranCikis.Size = new System.Drawing.Size(292, 89);
             this.butonAnaEkranCikis.TabIndex = 6;
@@ -95,7 +96,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(292, 95);
             this.button2.TabIndex = 10;
-            this.button2.Text = " 🎯 Quiz Başlat ";
+            this.button2.Text = "  🎯Quiz Başlat ";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -115,7 +116,7 @@
             this.button3.BackColor = System.Drawing.Color.LightGray;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(350, 335);
+            this.button3.Location = new System.Drawing.Point(350, 465);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(292, 95);
             this.button3.TabIndex = 12;
@@ -136,12 +137,26 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LightGray;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button5.Location = new System.Drawing.Point(350, 335);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(292, 95);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "📚 Wordle";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Uygulama_Ana_Ekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(673, 597);
+            this.ClientSize = new System.Drawing.Size(673, 689);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -169,5 +184,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

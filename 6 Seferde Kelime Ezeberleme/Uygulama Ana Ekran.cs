@@ -86,5 +86,13 @@ namespace _6_Seferde_Kelime_Ezeberleme
             kelimelereGec.FormClosed += (s, args) => this.Close();
             kelimelereGec.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Wordle wordleGec = new Wordle(kullaniciAdi);
+            wordleGec.FormClosed += (s, args) => this.Close();
+            wordleGec.Show();
+        }
     }
 }
