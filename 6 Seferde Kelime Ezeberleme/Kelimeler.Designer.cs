@@ -45,6 +45,7 @@
             this.dataGridKelimeler.Name = "dataGridKelimeler";
             this.dataGridKelimeler.ReadOnly = true;
             this.dataGridKelimeler.RowHeadersWidth = 51;
+            this.dataGridKelimeler.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridKelimeler.RowTemplate.Height = 24;
             this.dataGridKelimeler.Size = new System.Drawing.Size(625, 451);
             this.dataGridKelimeler.TabIndex = 0;

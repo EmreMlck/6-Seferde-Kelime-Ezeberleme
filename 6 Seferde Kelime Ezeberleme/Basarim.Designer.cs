@@ -35,7 +35,7 @@
             // 
             this.butonBasarimGeri.BackColor = System.Drawing.Color.DimGray;
             this.butonBasarimGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonBasarimGeri.Location = new System.Drawing.Point(506, 509);
+            this.butonBasarimGeri.Location = new System.Drawing.Point(503, 518);
             this.butonBasarimGeri.Name = "butonBasarimGeri";
             this.butonBasarimGeri.Size = new System.Drawing.Size(131, 43);
             this.butonBasarimGeri.TabIndex = 10;
