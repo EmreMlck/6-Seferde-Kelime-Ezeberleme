@@ -151,7 +151,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
             if (tahmin.Equals(kelime.ToUpper(), StringComparison.OrdinalIgnoreCase))
             {
                 MessageBox.Show("Doğru tahmin yaptınız, TEBRİKLER!");
-                SatirKapat(aktifSatir, true); // yeşil
+                for(int i = aktifSatir; i < uzunlukTahmin; i++)
+                {
+                    SatirKapat(i, true); // yeşil
+                }
+                
             }
             else
             {
