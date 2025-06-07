@@ -1,0 +1,4394 @@
+[
+  {
+    "kullaniciKelimeId": 1,
+    "kullaniciId": 1,
+    "kelimeId": 1,
+    "dogruSayisi": 5,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 2,
+    "kullaniciId": 1,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 3,
+    "kullaniciId": 1,
+    "kelimeId": 3,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 4,
+    "kullaniciId": 1,
+    "kelimeId": 4,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 5,
+    "kullaniciId": 1,
+    "kelimeId": 5,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 6,
+    "kullaniciId": 1,
+    "kelimeId": 6,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 7,
+    "kullaniciId": 1,
+    "kelimeId": 7,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 8,
+    "kullaniciId": 1,
+    "kelimeId": 8,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 9,
+    "kullaniciId": 1,
+    "kelimeId": 9,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 10,
+    "kullaniciId": 1,
+    "kelimeId": 10,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 11,
+    "kullaniciId": 1,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 12,
+    "kullaniciId": 1,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 13,
+    "kullaniciId": 1,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 14,
+    "kullaniciId": 1,
+    "kelimeId": 14,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 15,
+    "kullaniciId": 1,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 16,
+    "kullaniciId": 1,
+    "kelimeId": 16,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 17,
+    "kullaniciId": 1,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 18,
+    "kullaniciId": 1,
+    "kelimeId": 18,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 19,
+    "kullaniciId": 1,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 20,
+    "kullaniciId": 1,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 21,
+    "kullaniciId": 1,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 22,
+    "kullaniciId": 1,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 23,
+    "kullaniciId": 1,
+    "kelimeId": 23,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 24,
+    "kullaniciId": 1,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 25,
+    "kullaniciId": 1,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 26,
+    "kullaniciId": 1,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 27,
+    "kullaniciId": 1,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 28,
+    "kullaniciId": 1,
+    "kelimeId": 28,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 29,
+    "kullaniciId": 1,
+    "kelimeId": 29,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 30,
+    "kullaniciId": 1,
+    "kelimeId": 30,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 31,
+    "kullaniciId": 1,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 32,
+    "kullaniciId": 1,
+    "kelimeId": 32,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 33,
+    "kullaniciId": 1,
+    "kelimeId": 33,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 34,
+    "kullaniciId": 1,
+    "kelimeId": 34,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 35,
+    "kullaniciId": 1,
+    "kelimeId": 35,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 36,
+    "kullaniciId": 1,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 37,
+    "kullaniciId": 1,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 38,
+    "kullaniciId": 1,
+    "kelimeId": 38,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 39,
+    "kullaniciId": 1,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 40,
+    "kullaniciId": 1,
+    "kelimeId": 40,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 41,
+    "kullaniciId": 1,
+    "kelimeId": 41,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 42,
+    "kullaniciId": 1,
+    "kelimeId": 42,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 43,
+    "kullaniciId": 1,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 44,
+    "kullaniciId": 1,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 45,
+    "kullaniciId": 1,
+    "kelimeId": 45,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 46,
+    "kullaniciId": 1,
+    "kelimeId": 46,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 47,
+    "kullaniciId": 1,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 48,
+    "kullaniciId": 1,
+    "kelimeId": 48,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 49,
+    "kullaniciId": 1,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 50,
+    "kullaniciId": 1,
+    "kelimeId": 50,
+    "dogruSayisi": 2,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 51,
+    "kullaniciId": 1,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 52,
+    "kullaniciId": 1,
+    "kelimeId": 70,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 53,
+    "kullaniciId": 1,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 54,
+    "kullaniciId": 1,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 55,
+    "kullaniciId": 1,
+    "kelimeId": 73,
+    "dogruSayisi": 3,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 56,
+    "kullaniciId": 1,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 57,
+    "kullaniciId": 1,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 58,
+    "kullaniciId": 1,
+    "kelimeId": 76,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 59,
+    "kullaniciId": 1,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 60,
+    "kullaniciId": 1,
+    "kelimeId": 78,
+    "dogruSayisi": 1,
+    "sonDogruTarihi": "2025-06-06T00:00:00",
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 61,
+    "kullaniciId": 1,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 62,
+    "kullaniciId": 2,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 63,
+    "kullaniciId": 2,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 64,
+    "kullaniciId": 2,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 65,
+    "kullaniciId": 2,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 66,
+    "kullaniciId": 2,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 67,
+    "kullaniciId": 2,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 68,
+    "kullaniciId": 2,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 69,
+    "kullaniciId": 2,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 70,
+    "kullaniciId": 2,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 71,
+    "kullaniciId": 2,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 72,
+    "kullaniciId": 2,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 73,
+    "kullaniciId": 2,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 74,
+    "kullaniciId": 2,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 75,
+    "kullaniciId": 2,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 76,
+    "kullaniciId": 2,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 77,
+    "kullaniciId": 2,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 78,
+    "kullaniciId": 2,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 79,
+    "kullaniciId": 2,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 80,
+    "kullaniciId": 2,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 81,
+    "kullaniciId": 2,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 82,
+    "kullaniciId": 2,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 83,
+    "kullaniciId": 2,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 84,
+    "kullaniciId": 2,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 85,
+    "kullaniciId": 2,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 86,
+    "kullaniciId": 2,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 87,
+    "kullaniciId": 2,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 88,
+    "kullaniciId": 2,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 89,
+    "kullaniciId": 2,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 90,
+    "kullaniciId": 2,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 91,
+    "kullaniciId": 2,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 92,
+    "kullaniciId": 2,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 93,
+    "kullaniciId": 2,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 94,
+    "kullaniciId": 2,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 95,
+    "kullaniciId": 2,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 96,
+    "kullaniciId": 2,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 97,
+    "kullaniciId": 2,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 98,
+    "kullaniciId": 2,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 99,
+    "kullaniciId": 2,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 100,
+    "kullaniciId": 2,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 101,
+    "kullaniciId": 2,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 102,
+    "kullaniciId": 2,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 103,
+    "kullaniciId": 2,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 104,
+    "kullaniciId": 2,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 105,
+    "kullaniciId": 2,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 106,
+    "kullaniciId": 2,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 107,
+    "kullaniciId": 2,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 108,
+    "kullaniciId": 2,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 109,
+    "kullaniciId": 2,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 110,
+    "kullaniciId": 2,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 111,
+    "kullaniciId": 2,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 112,
+    "kullaniciId": 2,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 113,
+    "kullaniciId": 2,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 114,
+    "kullaniciId": 2,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 115,
+    "kullaniciId": 2,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 116,
+    "kullaniciId": 2,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 117,
+    "kullaniciId": 2,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 118,
+    "kullaniciId": 2,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 119,
+    "kullaniciId": 2,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 120,
+    "kullaniciId": 2,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 121,
+    "kullaniciId": 2,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 122,
+    "kullaniciId": 2,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 123,
+    "kullaniciId": 3,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 124,
+    "kullaniciId": 3,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 125,
+    "kullaniciId": 3,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 126,
+    "kullaniciId": 3,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 127,
+    "kullaniciId": 3,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 128,
+    "kullaniciId": 3,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 129,
+    "kullaniciId": 3,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 130,
+    "kullaniciId": 3,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 131,
+    "kullaniciId": 3,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 132,
+    "kullaniciId": 3,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 133,
+    "kullaniciId": 3,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 134,
+    "kullaniciId": 3,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 135,
+    "kullaniciId": 3,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 136,
+    "kullaniciId": 3,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 137,
+    "kullaniciId": 3,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 138,
+    "kullaniciId": 3,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 139,
+    "kullaniciId": 3,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 140,
+    "kullaniciId": 3,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 141,
+    "kullaniciId": 3,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 142,
+    "kullaniciId": 3,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 143,
+    "kullaniciId": 3,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 144,
+    "kullaniciId": 3,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 145,
+    "kullaniciId": 3,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 146,
+    "kullaniciId": 3,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 147,
+    "kullaniciId": 3,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 148,
+    "kullaniciId": 3,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 149,
+    "kullaniciId": 3,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 150,
+    "kullaniciId": 3,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 151,
+    "kullaniciId": 3,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 152,
+    "kullaniciId": 3,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 153,
+    "kullaniciId": 3,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 154,
+    "kullaniciId": 3,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 155,
+    "kullaniciId": 3,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 156,
+    "kullaniciId": 3,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 157,
+    "kullaniciId": 3,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 158,
+    "kullaniciId": 3,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 159,
+    "kullaniciId": 3,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 160,
+    "kullaniciId": 3,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 161,
+    "kullaniciId": 3,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 162,
+    "kullaniciId": 3,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 163,
+    "kullaniciId": 3,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 164,
+    "kullaniciId": 3,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 165,
+    "kullaniciId": 3,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 166,
+    "kullaniciId": 3,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 167,
+    "kullaniciId": 3,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 168,
+    "kullaniciId": 3,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 169,
+    "kullaniciId": 3,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 170,
+    "kullaniciId": 3,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 171,
+    "kullaniciId": 3,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 172,
+    "kullaniciId": 3,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 173,
+    "kullaniciId": 3,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 174,
+    "kullaniciId": 3,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 175,
+    "kullaniciId": 3,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 176,
+    "kullaniciId": 3,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 177,
+    "kullaniciId": 3,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 178,
+    "kullaniciId": 3,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 179,
+    "kullaniciId": 3,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 180,
+    "kullaniciId": 3,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 181,
+    "kullaniciId": 3,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 182,
+    "kullaniciId": 3,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 183,
+    "kullaniciId": 3,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 184,
+    "kullaniciId": 4,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 185,
+    "kullaniciId": 4,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 186,
+    "kullaniciId": 4,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 187,
+    "kullaniciId": 4,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 188,
+    "kullaniciId": 4,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 189,
+    "kullaniciId": 4,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 190,
+    "kullaniciId": 4,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 191,
+    "kullaniciId": 4,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 192,
+    "kullaniciId": 4,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 193,
+    "kullaniciId": 4,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 194,
+    "kullaniciId": 4,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 195,
+    "kullaniciId": 4,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 196,
+    "kullaniciId": 4,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 197,
+    "kullaniciId": 4,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 198,
+    "kullaniciId": 4,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 199,
+    "kullaniciId": 4,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 200,
+    "kullaniciId": 4,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 201,
+    "kullaniciId": 4,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 202,
+    "kullaniciId": 4,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 203,
+    "kullaniciId": 4,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 204,
+    "kullaniciId": 4,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 205,
+    "kullaniciId": 4,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 206,
+    "kullaniciId": 4,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 207,
+    "kullaniciId": 4,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 208,
+    "kullaniciId": 4,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 209,
+    "kullaniciId": 4,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 210,
+    "kullaniciId": 4,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 211,
+    "kullaniciId": 4,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 212,
+    "kullaniciId": 4,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 213,
+    "kullaniciId": 4,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 214,
+    "kullaniciId": 4,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 215,
+    "kullaniciId": 4,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 216,
+    "kullaniciId": 4,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 217,
+    "kullaniciId": 4,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 218,
+    "kullaniciId": 4,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 219,
+    "kullaniciId": 4,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 220,
+    "kullaniciId": 4,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 221,
+    "kullaniciId": 4,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 222,
+    "kullaniciId": 4,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 223,
+    "kullaniciId": 4,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 224,
+    "kullaniciId": 4,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 225,
+    "kullaniciId": 4,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 226,
+    "kullaniciId": 4,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 227,
+    "kullaniciId": 4,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 228,
+    "kullaniciId": 4,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 229,
+    "kullaniciId": 4,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 230,
+    "kullaniciId": 4,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 231,
+    "kullaniciId": 4,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 232,
+    "kullaniciId": 4,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 233,
+    "kullaniciId": 4,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 234,
+    "kullaniciId": 4,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 235,
+    "kullaniciId": 4,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 236,
+    "kullaniciId": 4,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 237,
+    "kullaniciId": 4,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 238,
+    "kullaniciId": 4,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 239,
+    "kullaniciId": 4,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 240,
+    "kullaniciId": 4,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 241,
+    "kullaniciId": 4,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 242,
+    "kullaniciId": 4,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 243,
+    "kullaniciId": 4,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 244,
+    "kullaniciId": 4,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 245,
+    "kullaniciId": 5,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 246,
+    "kullaniciId": 5,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 247,
+    "kullaniciId": 5,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 248,
+    "kullaniciId": 5,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 249,
+    "kullaniciId": 5,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 250,
+    "kullaniciId": 5,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 251,
+    "kullaniciId": 5,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 252,
+    "kullaniciId": 5,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 253,
+    "kullaniciId": 5,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 254,
+    "kullaniciId": 5,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 255,
+    "kullaniciId": 5,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 256,
+    "kullaniciId": 5,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 257,
+    "kullaniciId": 5,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 258,
+    "kullaniciId": 5,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 259,
+    "kullaniciId": 5,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 260,
+    "kullaniciId": 5,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 261,
+    "kullaniciId": 5,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 262,
+    "kullaniciId": 5,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 263,
+    "kullaniciId": 5,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 264,
+    "kullaniciId": 5,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 265,
+    "kullaniciId": 5,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 266,
+    "kullaniciId": 5,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 267,
+    "kullaniciId": 5,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 268,
+    "kullaniciId": 5,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 269,
+    "kullaniciId": 5,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 270,
+    "kullaniciId": 5,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 271,
+    "kullaniciId": 5,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 272,
+    "kullaniciId": 5,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 273,
+    "kullaniciId": 5,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 274,
+    "kullaniciId": 5,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 275,
+    "kullaniciId": 5,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 276,
+    "kullaniciId": 5,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 277,
+    "kullaniciId": 5,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 278,
+    "kullaniciId": 5,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 279,
+    "kullaniciId": 5,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 280,
+    "kullaniciId": 5,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 281,
+    "kullaniciId": 5,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 282,
+    "kullaniciId": 5,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 283,
+    "kullaniciId": 5,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 284,
+    "kullaniciId": 5,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 285,
+    "kullaniciId": 5,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 286,
+    "kullaniciId": 5,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 287,
+    "kullaniciId": 5,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 288,
+    "kullaniciId": 5,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 289,
+    "kullaniciId": 5,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 290,
+    "kullaniciId": 5,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 291,
+    "kullaniciId": 5,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 292,
+    "kullaniciId": 5,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 293,
+    "kullaniciId": 5,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 294,
+    "kullaniciId": 5,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 295,
+    "kullaniciId": 5,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 296,
+    "kullaniciId": 5,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 297,
+    "kullaniciId": 5,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 298,
+    "kullaniciId": 5,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 299,
+    "kullaniciId": 5,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 300,
+    "kullaniciId": 5,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 301,
+    "kullaniciId": 5,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 302,
+    "kullaniciId": 5,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 303,
+    "kullaniciId": 5,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 304,
+    "kullaniciId": 5,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 305,
+    "kullaniciId": 5,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 306,
+    "kullaniciId": 8,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 307,
+    "kullaniciId": 8,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 308,
+    "kullaniciId": 8,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 309,
+    "kullaniciId": 8,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 310,
+    "kullaniciId": 8,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 311,
+    "kullaniciId": 8,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 312,
+    "kullaniciId": 8,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 313,
+    "kullaniciId": 8,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 314,
+    "kullaniciId": 8,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 315,
+    "kullaniciId": 8,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 316,
+    "kullaniciId": 8,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 317,
+    "kullaniciId": 8,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 318,
+    "kullaniciId": 8,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 319,
+    "kullaniciId": 8,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 320,
+    "kullaniciId": 8,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 321,
+    "kullaniciId": 8,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 322,
+    "kullaniciId": 8,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 323,
+    "kullaniciId": 8,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 324,
+    "kullaniciId": 8,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 325,
+    "kullaniciId": 8,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 326,
+    "kullaniciId": 8,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 327,
+    "kullaniciId": 8,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 328,
+    "kullaniciId": 8,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 329,
+    "kullaniciId": 8,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 330,
+    "kullaniciId": 8,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 331,
+    "kullaniciId": 8,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 332,
+    "kullaniciId": 8,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 333,
+    "kullaniciId": 8,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 334,
+    "kullaniciId": 8,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 335,
+    "kullaniciId": 8,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 336,
+    "kullaniciId": 8,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 337,
+    "kullaniciId": 8,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 338,
+    "kullaniciId": 8,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 339,
+    "kullaniciId": 8,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 340,
+    "kullaniciId": 8,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 341,
+    "kullaniciId": 8,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 342,
+    "kullaniciId": 8,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 343,
+    "kullaniciId": 8,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 344,
+    "kullaniciId": 8,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 345,
+    "kullaniciId": 8,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 346,
+    "kullaniciId": 8,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 347,
+    "kullaniciId": 8,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 348,
+    "kullaniciId": 8,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 349,
+    "kullaniciId": 8,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 350,
+    "kullaniciId": 8,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 351,
+    "kullaniciId": 8,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 352,
+    "kullaniciId": 8,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 353,
+    "kullaniciId": 8,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 354,
+    "kullaniciId": 8,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 355,
+    "kullaniciId": 8,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 356,
+    "kullaniciId": 8,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 357,
+    "kullaniciId": 8,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 358,
+    "kullaniciId": 8,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 359,
+    "kullaniciId": 8,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 360,
+    "kullaniciId": 8,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 361,
+    "kullaniciId": 8,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 362,
+    "kullaniciId": 8,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 363,
+    "kullaniciId": 8,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 364,
+    "kullaniciId": 8,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 365,
+    "kullaniciId": 8,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 366,
+    "kullaniciId": 8,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 367,
+    "kullaniciId": 7,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 368,
+    "kullaniciId": 7,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 369,
+    "kullaniciId": 7,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 370,
+    "kullaniciId": 7,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 371,
+    "kullaniciId": 7,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 372,
+    "kullaniciId": 7,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 373,
+    "kullaniciId": 7,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 374,
+    "kullaniciId": 7,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 375,
+    "kullaniciId": 7,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 376,
+    "kullaniciId": 7,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 377,
+    "kullaniciId": 7,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 378,
+    "kullaniciId": 7,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 379,
+    "kullaniciId": 7,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 380,
+    "kullaniciId": 7,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 381,
+    "kullaniciId": 7,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 382,
+    "kullaniciId": 7,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 383,
+    "kullaniciId": 7,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 384,
+    "kullaniciId": 7,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 385,
+    "kullaniciId": 7,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 386,
+    "kullaniciId": 7,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 387,
+    "kullaniciId": 7,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 388,
+    "kullaniciId": 7,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 389,
+    "kullaniciId": 7,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 390,
+    "kullaniciId": 7,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 391,
+    "kullaniciId": 7,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 392,
+    "kullaniciId": 7,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 393,
+    "kullaniciId": 7,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 394,
+    "kullaniciId": 7,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 395,
+    "kullaniciId": 7,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 396,
+    "kullaniciId": 7,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 397,
+    "kullaniciId": 7,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 398,
+    "kullaniciId": 7,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 399,
+    "kullaniciId": 7,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 400,
+    "kullaniciId": 7,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 401,
+    "kullaniciId": 7,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 402,
+    "kullaniciId": 7,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 403,
+    "kullaniciId": 7,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 404,
+    "kullaniciId": 7,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 405,
+    "kullaniciId": 7,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 406,
+    "kullaniciId": 7,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 407,
+    "kullaniciId": 7,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 408,
+    "kullaniciId": 7,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 409,
+    "kullaniciId": 7,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 410,
+    "kullaniciId": 7,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 411,
+    "kullaniciId": 7,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 412,
+    "kullaniciId": 7,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 413,
+    "kullaniciId": 7,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 414,
+    "kullaniciId": 7,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 415,
+    "kullaniciId": 7,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 416,
+    "kullaniciId": 7,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 417,
+    "kullaniciId": 7,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 418,
+    "kullaniciId": 7,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 419,
+    "kullaniciId": 7,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 420,
+    "kullaniciId": 7,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 421,
+    "kullaniciId": 7,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 422,
+    "kullaniciId": 7,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 423,
+    "kullaniciId": 7,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 424,
+    "kullaniciId": 7,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 425,
+    "kullaniciId": 7,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 426,
+    "kullaniciId": 7,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 427,
+    "kullaniciId": 7,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 428,
+    "kullaniciId": 6,
+    "kelimeId": 31,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 429,
+    "kullaniciId": 6,
+    "kelimeId": 14,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 430,
+    "kullaniciId": 6,
+    "kelimeId": 39,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 431,
+    "kullaniciId": 6,
+    "kelimeId": 23,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 432,
+    "kullaniciId": 6,
+    "kelimeId": 2,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 433,
+    "kullaniciId": 6,
+    "kelimeId": 79,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 434,
+    "kullaniciId": 6,
+    "kelimeId": 3,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 435,
+    "kullaniciId": 6,
+    "kelimeId": 21,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 436,
+    "kullaniciId": 6,
+    "kelimeId": 45,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 437,
+    "kullaniciId": 6,
+    "kelimeId": 43,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 438,
+    "kullaniciId": 6,
+    "kelimeId": 11,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 439,
+    "kullaniciId": 6,
+    "kelimeId": 73,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 440,
+    "kullaniciId": 6,
+    "kelimeId": 22,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 441,
+    "kullaniciId": 6,
+    "kelimeId": 12,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 442,
+    "kullaniciId": 6,
+    "kelimeId": 75,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 443,
+    "kullaniciId": 6,
+    "kelimeId": 17,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 444,
+    "kullaniciId": 6,
+    "kelimeId": 16,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 445,
+    "kullaniciId": 6,
+    "kelimeId": 49,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 446,
+    "kullaniciId": 6,
+    "kelimeId": 35,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 447,
+    "kullaniciId": 6,
+    "kelimeId": 24,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 448,
+    "kullaniciId": 6,
+    "kelimeId": 20,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 449,
+    "kullaniciId": 6,
+    "kelimeId": 7,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 450,
+    "kullaniciId": 6,
+    "kelimeId": 48,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 451,
+    "kullaniciId": 6,
+    "kelimeId": 76,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 452,
+    "kullaniciId": 6,
+    "kelimeId": 1,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 453,
+    "kullaniciId": 6,
+    "kelimeId": 4,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 454,
+    "kullaniciId": 6,
+    "kelimeId": 72,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 455,
+    "kullaniciId": 6,
+    "kelimeId": 70,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 456,
+    "kullaniciId": 6,
+    "kelimeId": 50,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 457,
+    "kullaniciId": 6,
+    "kelimeId": 46,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 458,
+    "kullaniciId": 6,
+    "kelimeId": 78,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 459,
+    "kullaniciId": 6,
+    "kelimeId": 29,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 460,
+    "kullaniciId": 6,
+    "kelimeId": 25,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 461,
+    "kullaniciId": 6,
+    "kelimeId": 18,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 462,
+    "kullaniciId": 6,
+    "kelimeId": 8,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 463,
+    "kullaniciId": 6,
+    "kelimeId": 10,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 464,
+    "kullaniciId": 6,
+    "kelimeId": 41,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 465,
+    "kullaniciId": 6,
+    "kelimeId": 32,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 466,
+    "kullaniciId": 6,
+    "kelimeId": 27,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 467,
+    "kullaniciId": 6,
+    "kelimeId": 38,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 468,
+    "kullaniciId": 6,
+    "kelimeId": 5,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 469,
+    "kullaniciId": 6,
+    "kelimeId": 26,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 470,
+    "kullaniciId": 6,
+    "kelimeId": 77,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 471,
+    "kullaniciId": 6,
+    "kelimeId": 42,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 472,
+    "kullaniciId": 6,
+    "kelimeId": 15,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 473,
+    "kullaniciId": 6,
+    "kelimeId": 69,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 474,
+    "kullaniciId": 6,
+    "kelimeId": 71,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 475,
+    "kullaniciId": 6,
+    "kelimeId": 33,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 476,
+    "kullaniciId": 6,
+    "kelimeId": 36,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 477,
+    "kullaniciId": 6,
+    "kelimeId": 30,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 478,
+    "kullaniciId": 6,
+    "kelimeId": 37,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 479,
+    "kullaniciId": 6,
+    "kelimeId": 28,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 480,
+    "kullaniciId": 6,
+    "kelimeId": 9,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 481,
+    "kullaniciId": 6,
+    "kelimeId": 74,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 482,
+    "kullaniciId": 6,
+    "kelimeId": 40,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 483,
+    "kullaniciId": 6,
+    "kelimeId": 19,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 484,
+    "kullaniciId": 6,
+    "kelimeId": 44,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 485,
+    "kullaniciId": 6,
+    "kelimeId": 6,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 486,
+    "kullaniciId": 6,
+    "kelimeId": 34,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 487,
+    "kullaniciId": 6,
+    "kelimeId": 13,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  },
+  {
+    "kullaniciKelimeId": 488,
+    "kullaniciId": 6,
+    "kelimeId": 47,
+    "dogruSayisi": 0,
+    "sonDogruTarihi": null,
+    "ogrenildiMi": false,
+    "digerTestTarihi": null
+  }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "kullaniciKelimeId": 1,
+        "kullaniciId": 1,
+        "kelimeId": 1,
+        "ogrenildiMi": false,
+        "digerTestTarihi": null,
+        "kelimeID": 1,
+        "dogruSayisi": 0,
+        "sonDogruTarihi": null
+    },
+    {
+        "kullaniciKelimeId": 2,
+        "kullaniciId": 1,
+        "kelimeId": 2,
+        "ogrenildiMi": false,
+        "digerTestTarihi": null,
+        "kelimeID": 2,
+        "dogruSayisi": 0,
+        "sonDogruTarihi": null
+    }
+]

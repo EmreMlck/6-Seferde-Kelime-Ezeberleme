@@ -1,52 +1,368 @@
 [
-  { "trKelimeAdi": "merhaba", "ingKelimeAdi": "hello", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1596276122653-651a3898309f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }, 
-  { "trKelimeAdi": "kitap", "ingKelimeAdi": "book", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "araba", "ingKelimeAdi": "car", "kategoriId": 4, "resim": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }, 
-  { "trKelimeAdi": "ev", "ingKelimeAdi": "house", "kategoriId": 8, "resim": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }, 
-  { "trKelimeAdi": "okul", "ingKelimeAdi": "school", "kategoriId": 8, "resim": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "su", "ingKelimeAdi": "water", "kategoriId": 13, "resim": "https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "yemek", "ingKelimeAdi": "food", "kategoriId": 3, "resim": "https://images.unsplash.com/photo-1653983736416-6f775b329925?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kalem", "ingKelimeAdi": "pencil", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "masa", "ingKelimeAdi": "table", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1565791380713-1756b9a05343?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "telefon", "ingKelimeAdi": "phone", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1507955987999-df4864ee80d4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "bilgisayar", "ingKelimeAdi": "computer", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kapı", "ingKelimeAdi": "door", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1546728682-0b16cf85b8de?q=80&w=2131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "pencere", "ingKelimeAdi": "window", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1641291404345-794a94562e6e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "çanta", "ingKelimeAdi": "bag", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "ayakkabı", "ingKelimeAdi": "shoe", "kategoriId": 10, "resim": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "göz", "ingKelimeAdi": "eye", "kategoriId": 9, "resim": "https://images.unsplash.com/photo-1516220362602-dba5272034e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kulak", "ingKelimeAdi": "ear", "kategoriId": 9, "resim": "https://plus.unsplash.com/premium_photo-1723874502508-453ece1e1d2f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "burun", "ingKelimeAdi": "nose", "kategoriId": 9, "resim": "https://images.unsplash.com/photo-1541715301255-12a4839b424a?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "ağaç", "ingKelimeAdi": "tree", "kategoriId": 15, "resim": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "çiçek", "ingKelimeAdi": "flower", "kategoriId": 15, "resim": "https://images.unsplash.com/photo-1745822364138-4dd964c07fbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kedi", "ingKelimeAdi": "cat", "kategoriId": 1, "resim": "https://images.unsplash.com/photo-1705428453948-ac11cb54a5f1?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "köpek", "ingKelimeAdi": "dog", "kategoriId": 1, "resim": "https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kuş", "ingKelimeAdi": "bird", "kategoriId": 1, "resim": "https://images.unsplash.com/photo-1486365227551-f3f90034a57c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "balık", "ingKelimeAdi": "fish", "kategoriId": 1, "resim": "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "dağ", "ingKelimeAdi": "mountain", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1610445244597-cae62963c861?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "deniz", "ingKelimeAdi": "sea", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "nehir", "ingKelimeAdi": "river", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1498855926480-d98e83099315?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "güneş", "ingKelimeAdi": "sun", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1656934127359-97301c68994e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "ay", "ingKelimeAdi": "moon", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "yıldız", "ingKelimeAdi": "star", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1711065075956-08788846b846?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "hava", "ingKelimeAdi": "air", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1529958986175-1cacd1317691?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "yağmur", "ingKelimeAdi": "rain", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kar", "ingKelimeAdi": "snow", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "rüzgar", "ingKelimeAdi": "wind", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1505672678657-cc7037095e60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "ateş", "ingKelimeAdi": "fire", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1626492226196-4a1b03be09f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "toprak", "ingKelimeAdi": "soil", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "taş", "ingKelimeAdi": "stone", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1560427450-00fa9481f01e?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "yol", "ingKelimeAdi": "road", "kategoriId": 16, "resim": "https://images.unsplash.com/photo-1542569279-510fa9d21270?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "bisiklet", "ingKelimeAdi": "bicycle", "kategoriId": 4, "resim": "https://images.unsplash.com/photo-1676706079694-346cccd54ca4?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "tren", "ingKelimeAdi": "train", "kategoriId": 4, "resim": "https://images.unsplash.com/photo-1504970544576-86deafcd75ba?q=80&w=1880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "uçak", "ingKelimeAdi": "plane", "kategoriId": 4, "resim": "https://images.unsplash.com/photo-1615317779547-2078d82c549a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "gemi", "ingKelimeAdi": "ship", "kategoriId": 4, "resim": "https://images.unsplash.com/photo-1705289015032-02e55dc2c1b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "şehir", "ingKelimeAdi": "city", "kategoriId": 8, "resim": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "köy", "ingKelimeAdi": "village", "kategoriId": 8, "resim": "https://images.unsplash.com/photo-1614636006346-d3fb453b9901?q=80&w=2163&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "çocuk", "ingKelimeAdi": "child", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1620436226596-46a359a295bc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "adam", "ingKelimeAdi": "man", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "kadın", "ingKelimeAdi": "woman", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1536528317754-eb16ed71b389?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { "trKelimeAdi": "arkadaş", "ingKelimeAdi": "friend", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-   { "trKelimeAdi": "aile", "ingKelimeAdi": "family", "kategoriId": 11, "resim": "https://images.unsplash.com/photo-1559734840-f9509ee5677f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-   { "trKelimeAdi": "sevgi", "ingKelimeAdi": "love", "kategoriId": 7, "resim": "https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" } 
+  {
+    "trKelimeAdi": "merhaba",
+    "ingKelimeAdi": "hello",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1596276122653-651a3898309f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kitap",
+    "ingKelimeAdi": "book",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "araba",
+    "ingKelimeAdi": "car",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "ev",
+    "ingKelimeAdi": "house",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "okul",
+    "ingKelimeAdi": "school",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "su",
+    "ingKelimeAdi": "water",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "yemek",
+    "ingKelimeAdi": "food",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1653983736416-6f775b329925?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kalem",
+    "ingKelimeAdi": "pen",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "masa",
+    "ingKelimeAdi": "table",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1565791380713-1756b9a05343?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "telefon",
+    "ingKelimeAdi": "phone",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1507955987999-df4864ee80d4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "bilgisayar",
+    "ingKelimeAdi": "computer",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kapı",
+    "ingKelimeAdi": "door",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1546728682-0b16cf85b8de?q=80&w=2131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "pencere",
+    "ingKelimeAdi": "window",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1641291404345-794a94562e6e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "çanta",
+    "ingKelimeAdi": "bag",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "ayakkabı",
+    "ingKelimeAdi": "shoe",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "göz",
+    "ingKelimeAdi": "eye",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1516220362602-dba5272034e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kulak",
+    "ingKelimeAdi": "ear",
+    "kategoriId": 0,
+    "resim": "https://plus.unsplash.com/premium_photo-1723874502508-453ece1e1d2f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "burun",
+    "ingKelimeAdi": "nose",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1541715301255-12a4839b424a?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "ağaç",
+    "ingKelimeAdi": "tree",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "çiçek",
+    "ingKelimeAdi": "flower",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1745822364138-4dd964c07fbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kedi",
+    "ingKelimeAdi": "cat",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1705428453948-ac11cb54a5f1?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "köpek",
+    "ingKelimeAdi": "dog",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kuş",
+    "ingKelimeAdi": "bird",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1486365227551-f3f90034a57c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "balık",
+    "ingKelimeAdi": "fish",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "dağ",
+    "ingKelimeAdi": "mountain",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1610445244597-cae62963c861?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "deniz",
+    "ingKelimeAdi": "sea",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "nehir",
+    "ingKelimeAdi": "river",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1498855926480-d98e83099315?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "güneş",
+    "ingKelimeAdi": "sun",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1656934127359-97301c68994e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "ay",
+    "ingKelimeAdi": "moon",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "yıldız",
+    "ingKelimeAdi": "star",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1711065075956-08788846b846?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "hava",
+    "ingKelimeAdi": "air",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1529958986175-1cacd1317691?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "yağmur",
+    "ingKelimeAdi": "rain",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kar",
+    "ingKelimeAdi": "snow",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "rüzgar",
+    "ingKelimeAdi": "wind",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1505672678657-cc7037095e60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "ateş",
+    "ingKelimeAdi": "fire",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1626492226196-4a1b03be09f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "toprak",
+    "ingKelimeAdi": "soil",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "taş",
+    "ingKelimeAdi": "stone",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1560427450-00fa9481f01e?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "yol",
+    "ingKelimeAdi": "road",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1542569279-510fa9d21270?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "bisiklet",
+    "ingKelimeAdi": "bicycle",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1676706079694-346cccd54ca4?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "tren",
+    "ingKelimeAdi": "train",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1504970544576-86deafcd75ba?q=80&w=1880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "uçak",
+    "ingKelimeAdi": "plane",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1615317779547-2078d82c549a?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "gemi",
+    "ingKelimeAdi": "ship",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1705289015032-02e55dc2c1b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "şehir",
+    "ingKelimeAdi": "city",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "köy",
+    "ingKelimeAdi": "village",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1614636006346-d3fb453b9901?q=80&w=2163&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "çocuk",
+    "ingKelimeAdi": "child",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1620436226596-46a359a295bc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "adam",
+    "ingKelimeAdi": "man",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "kadın",
+    "ingKelimeAdi": "woman",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1536528317754-eb16ed71b389?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "arkadaş",
+    "ingKelimeAdi": "friend",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "aile",
+    "ingKelimeAdi": "family",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/photo-1559734840-f9509ee5677f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "sevgi",
+    "ingKelimeAdi": "love",
+    "kategoriId": 0,
+    "resim": "https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "trKelimeAdi": "hasta",
+    "ingKelimeAdi": "sick",
+    "kategoriId": 9,
+    "resim": "https://images.unsplash.com/photo-1516126491303-6f54240c8491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxzaWNrfGVufDB8fHx8MTc0ODk1MTEyMnww&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "tembel",
+    "ingKelimeAdi": "lazy",
+    "kategoriId": 11,
+    "resim": "https://images.unsplash.com/photo-1604830926588-b51d5ddeba7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxsYXp5fGVufDB8fHx8MTc0ODk1MzE0OHww&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "zeki",
+    "ingKelimeAdi": "smart",
+    "kategoriId": 11,
+    "resim": "https://images.unsplash.com/photo-1660798027105-5da8ad164e27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxzbWFydHxlbnwwfHx8fDE3NDg5NTM0NDV8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "klavye",
+    "ingKelimeAdi": "keyboard",
+    "kategoriId": 10,
+    "resim": "https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxrZXlib2FyZHxlbnwwfHx8fDE3NDg5NTM1Nzl8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "deli",
+    "ingKelimeAdi": "crazy",
+    "kategoriId": 11,
+    "resim": "https://images.unsplash.com/photo-1585507252242-11fe632c26e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxjcmF6eXxlbnwwfHx8fDE3NDg5NTM5OTJ8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "kaplan",
+    "ingKelimeAdi": "tiger",
+    "kategoriId": 1,
+    "resim": "https://images.unsplash.com/photo-1615963244664-5b845b2025ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHx0aWdlcnxlbnwwfHx8fDE3NDg5NTUxNzR8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "kartal",
+    "ingKelimeAdi": "eagle",
+    "kategoriId": 1,
+    "resim": "https://images.unsplash.com/photo-1531884070720-875c7622d4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxlYWdsZXxlbnwwfHx8fDE3NDg5NTUzODV8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "keçi",
+    "ingKelimeAdi": "goat",
+    "kategoriId": 1,
+    "resim": "https://images.unsplash.com/photo-1524024973431-2ad916746881?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxnb2F0fGVufDB8fHx8MTc0ODk1NTcxMnww&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "koyun",
+    "ingKelimeAdi": "sheep",
+    "kategoriId": 1,
+    "resim": "https://images.unsplash.com/photo-1575014912260-91c2b5ad7441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxzaGVlcHxlbnwwfHx8fDE3NDg5NTU5MDV8MA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "maymun",
+    "ingKelimeAdi": "monkey",
+    "kategoriId": 1,
+    "resim": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxtb25rZXl8ZW58MHx8fHwxNzQ4OTU2NDIzfDA&ixlib=rb-4.1.0&q=80&w=400"
+  },
+  {
+    "trKelimeAdi": "şişe",
+    "ingKelimeAdi": "bottle",
+    "kategoriId": 10,
+    "resim": "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTQyMjB8MHwxfHNlYXJjaHwxfHxib3R0bGV8ZW58MHx8fHwxNzQ4OTYwNDAyfDA&ixlib=rb-4.1.0&q=80&w=400"
+  }
 ]

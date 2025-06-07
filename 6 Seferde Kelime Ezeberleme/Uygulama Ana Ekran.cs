@@ -14,10 +14,15 @@ namespace _6_Seferde_Kelime_Ezeberleme
     public partial class Uygulama_Ana_Ekran : Form
     {
         public string kullaniciAdi { get; set; }
-        public Uygulama_Ana_Ekran(string kullaniciAdi)
+        private int kullaniciId;
+        
+
+
+        public Uygulama_Ana_Ekran(string kullaniciAdi, int aktifKullaniciId)
         {
             InitializeComponent();
             this.kullaniciAdi = kullaniciAdi;
+            this.kullaniciId = aktifKullaniciId;
         }
 
         private void Uygulama_Ana_Ekran_Load(object sender, EventArgs e)
@@ -56,7 +61,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonGiris_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme(kullaniciAdi);
+            KelimeEkleme kelimeEklemeyeGec = new KelimeEkleme(kullaniciAdi , kullaniciId);
             kelimeEklemeyeGec.FormClosed += (s, args) => this.Close();
             kelimeEklemeyeGec.Show();           
         }
@@ -64,7 +69,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Basarim basarimaGec = new Basarim(kullaniciAdi);
+            Basarim basarimaGec = new Basarim(kullaniciAdi , kullaniciId);
             basarimaGec.FormClosed += (s, args) => this.Close();
             basarimaGec.Show();
         }
@@ -82,7 +87,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Kelimeler kelimelereGec = new Kelimeler(kullaniciAdi);
+            Kelimeler kelimelereGec = new Kelimeler(kullaniciAdi,kullaniciId);
             kelimelereGec.FormClosed += (s, args) => this.Close();
             kelimelereGec.Show();
         }
@@ -90,9 +95,26 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Wordle wordleGec = new Wordle(kullaniciAdi);
+            Wordle wordleGec = new Wordle(kullaniciAdi , kullaniciId);
             wordleGec.FormClosed += (s, args) => this.Close();
             wordleGec.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sınavModülü sinav = new sınavModülü(kullaniciAdi , kullaniciId );
+            sinav.Show();
+            this.Hide();
+            sinav.FormClosed += (s, args) => this.Show();
+            sinav.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AyarlarModülü ayarForm = new AyarlarModülü();
+            ayarForm.ShowDialog(); // Ayarlar formunu modal olarak aç
+    
         }
     }
 }

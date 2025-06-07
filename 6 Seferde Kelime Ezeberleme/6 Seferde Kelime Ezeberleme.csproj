@@ -80,13 +80,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AyarlarModülü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarlarModülü.Designer.cs">
+      <DependentUpon>AyarlarModülü.cs</DependentUpon>
+    </Compile>
     <Compile Include="Basarim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Basarim.Designer.cs">
       <DependentUpon>Basarim.cs</DependentUpon>
     </Compile>
+    <Compile Include="KelimeSenkranizasyonu.cs" />
+    <Compile Include="KullaniciKelimeDurumu.cs" />
+    <Compile Include="KullanıcıAyarları.cs" />
+    <Compile Include="sınavModülü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sınavModülü.Designer.cs">
+      <DependentUpon>sınavModülü.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kategori.cs" />
+    <Compile Include="Kelime.cs" />
     <Compile Include="KelimeEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +116,7 @@
     <Compile Include="Kelimeler.Designer.cs">
       <DependentUpon>Kelimeler.cs</DependentUpon>
     </Compile>
+    <Compile Include="KelimeYukleyici.cs" />
     <Compile Include="KullanıcıKayıt-Giriş.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +125,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinavYonetici.cs" />
+    <Compile Include="Soru.cs" />
     <Compile Include="Uygulama Ana Ekran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +140,9 @@
     <Compile Include="Wordle.Designer.cs">
       <DependentUpon>Wordle.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AyarlarModülü.resx">
+      <DependentUpon>AyarlarModülü.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Basarim.resx">
       <DependentUpon>Basarim.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,12 +165,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="sınavModülü.resx">
+      <DependentUpon>sınavModülü.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uygulama Ana Ekran.resx">
       <DependentUpon>Uygulama Ana Ekran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wordle.resx">
       <DependentUpon>Wordle.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="kullanici_kelimeleri.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

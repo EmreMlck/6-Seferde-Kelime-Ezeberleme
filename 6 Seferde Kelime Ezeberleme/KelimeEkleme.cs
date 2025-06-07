@@ -18,16 +18,18 @@ namespace _6_Seferde_Kelime_Ezeberleme
     public partial class KelimeEkleme : Form
     {
         string kullaniciAdi;
-        public KelimeEkleme(string kullaniciAdi)
+        private int kullaniciId;
+        public KelimeEkleme(string kullaniciAdi , int aktifKullaniciId)
         {
             InitializeComponent();
             this.kullaniciAdi = kullaniciAdi;
+            this.kullaniciId = aktifKullaniciId;
         }
 
         private void KelimeEkleme_Load(object sender, EventArgs e)
         {
             
-            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
             
             List<Kategori> kategoriler = new List<Kategori>();
 
@@ -111,7 +113,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonGirisGeri_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Uygulama_Ana_Ekran anaEkranaGec = new Uygulama_Ana_Ekran(kullaniciAdi);
+            Uygulama_Ana_Ekran anaEkranaGec = new Uygulama_Ana_Ekran(kullaniciAdi , kullaniciId);
             anaEkranaGec.FormClosed += (s, args) => this.Close();
             anaEkranaGec.Show();
         }

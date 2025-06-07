@@ -12,7 +12,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 using System.IO;
 using Newtonsoft.Json;
-using System.Data.SqlClient;
 
 namespace _6_Seferde_Kelime_Ezeberleme
 {
@@ -122,7 +121,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 return;
             }
 
-            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -142,18 +141,49 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         if (reader.Read())
                         {
                             int kullaniciId = (int)reader["kullaniciId"];
+                            string jsonDosyaYolu = "kullanici_kelimeleri.json";
+
+                            // JSON dosyasını oluştur
+                            VeritabanıKelimeEkleme.VeritabaniKelimeEklemeHelper.KullaniciKelimeJsonOlustur(kullaniciId, connectionString, jsonDosyaYolu);
+
                             string kullaniciAdi = reader["kullaniciAdi"].ToString();
 
+                            reader.Close(); // <-- Bunu ekle!
+
+                            // Tüm kelimeleri çek
+                            List<int> kelimeIdler = new List<int>();
+                            using (SqlCommand kelimeCmd = new SqlCommand("SELECT kelimeId FROM Kelimeler", conn))
+                            using (SqlDataReader kelimeReader = kelimeCmd.ExecuteReader())
+                            {
+                                while (kelimeReader.Read())
+                                    kelimeIdler.Add(kelimeReader.GetInt32(0));
+                            }
+
+                            // Her kelime için KullaniciKelimeleri tablosuna ekle (varsa hata verirse try-catch ile geç)
+                            foreach (var kelimeId in kelimeIdler)
+                            {
+                                try
+                                {
+                                    using (SqlCommand ekleCmd = new SqlCommand("INSERT INTO KullaniciKelimeleri (kullaniciId, kelimeId, dogruSayisi, sonDogruTarihi, ogrenildiMi, digerTestTarihi) VALUES (@kullaniciId, @kelimeId, 0, NULL, 0, NULL)", conn))
+                                    {
+                                        ekleCmd.Parameters.AddWithValue("@kullaniciId", kullaniciId);
+                                        ekleCmd.Parameters.AddWithValue("@kelimeId", kelimeId);
+                                        ekleCmd.ExecuteNonQuery();
+                                    }
+                                }
+                                catch { /* Zaten varsa hata verme, devam et */ }
+                            }
+
                             this.Hide();
-                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran(kullaniciAdi);                          
+                            Uygulama_Ana_Ekran anaEkran = new Uygulama_Ana_Ekran(kullaniciAdi, kullaniciId);
                             anaEkran.FormClosed += (s, args) => this.Close();
                             anaEkran.Show();
-
                         }
                         else
                         {
                             MessageBox.Show("Kullanıcı adı veya şifre hatalı!", "Giriş Başarısız", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+
 
                         reader.Close();
                     }
@@ -170,7 +200,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             var json = File.ReadAllText("sozluk.json");
             var sozluk = JsonConvert.DeserializeObject<List<KelimeJson>>(json);
 
-            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -295,7 +325,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             string ad = textBoxKayitAd.Text;
             string sifre = textBoxKayitSifre.Text;
 
-            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
 
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -316,6 +346,28 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         {
                             int kullaniciId = (int)reader["kullaniciId"];
                             string kullaniciAdi = reader["kullaniciAdi"].ToString();
+
+                            reader.Close(); // <-- Bunu ekle!
+
+                            // Tüm kelimeleri çek
+                            List<int> kelimeIdler = new List<int>();
+                            using (SqlCommand kelimeCmd = new SqlCommand("SELECT kelimeId FROM Kelimeler", conn))
+                            using (SqlDataReader kelimeReader = kelimeCmd.ExecuteReader())
+                            {
+                                while (kelimeReader.Read())
+                                    kelimeIdler.Add(kelimeReader.GetInt32(0));
+                            }
+
+                            // Her kelime için KullaniciKelimeleri tablosuna ekle
+                            foreach (var kelimeId in kelimeIdler)
+                            {
+                                using (SqlCommand ekleCmd = new SqlCommand("INSERT INTO KullaniciKelimeleri (kullaniciId, kelimeId, dogruSayisi, sonDogruTarihi, ogrenildiMi, digerTestTarihi) VALUES (@kullaniciId, @kelimeId, 0, NULL, 0, NULL)", conn))
+                                {
+                                    ekleCmd.Parameters.AddWithValue("@kullaniciId", kullaniciId);
+                                    ekleCmd.Parameters.AddWithValue("@kelimeId", kelimeId);
+                                    ekleCmd.ExecuteNonQuery();
+                                }
+                            }
 
                             MessageBox.Show($"Kayıt Başarılı. Kullanıcı ID: {kullaniciId}");
                         }

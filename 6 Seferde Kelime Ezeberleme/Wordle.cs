@@ -19,14 +19,19 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private int kelimeUzunluk;
         private int uzunlukTahmin;
         private int aktifSatir = 0;
+        private int kullaniciId;
+
 
         List<string> tumTahminler = new List<string>();
 
         TextBox[,] GridOlusturma;
-        public Wordle(string kullaniciAdi)
+       
+
+        public Wordle(string kullaniciAdi, int aktifKullaniciId)
         {
             InitializeComponent();
             this.kullaniciAdi = kullaniciAdi;
+            this.kullaniciId = aktifKullaniciId;
         }
 
         private void Wordle_Load(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonBasarimGeri_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Uygulama_Ana_Ekran WordleAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi);
+            Uygulama_Ana_Ekran WordleAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi,kullaniciId );
             WordleAnaEkrana.FormClosed += (s, args) => this.Close();
             WordleAnaEkrana.Show();
         }
@@ -49,7 +54,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         }
         private void GridOlustur(int uzunlukTahminDegiskeni)
         {
-            string connectionString = "Server=EMREMLCK\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
             kelime = "";
             kelimeUzunluk = 0;
             uzunlukTahmin = uzunlukTahminDegiskeni;

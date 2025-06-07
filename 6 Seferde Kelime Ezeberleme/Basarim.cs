@@ -14,10 +14,12 @@ namespace _6_Seferde_Kelime_Ezeberleme
     public partial class Basarim : Form
     {
         private string kullaniciAdi;
-        public Basarim(string kullaniciAdi)
+        private int kullaniciId;
+        public Basarim(string kullaniciAdi, int aktifKullaniciId)
         {
             InitializeComponent();
             this.kullaniciAdi = kullaniciAdi;
+            this.kullaniciId = aktifKullaniciId;
         }
 
         private void Basarim_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonBasarimGeri_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Uygulama_Ana_Ekran BasarimdanAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi);
+            Uygulama_Ana_Ekran BasarimdanAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi , kullaniciId);
             BasarimdanAnaEkrana.FormClosed += (s, args) => this.Close();
             BasarimdanAnaEkrana.Show();
         }
