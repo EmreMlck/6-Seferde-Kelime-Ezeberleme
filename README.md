@@ -17,6 +17,7 @@ Kelimeler 6 tekrar ile kullanıcıya gösterilir ve bu şekilde daha iyi bir ezb
 
 - C# (.NET Framework)
 - Windows Forms
+- MSSQL 2022
 - Visual Studio 2022
 
 ## Kurulum
