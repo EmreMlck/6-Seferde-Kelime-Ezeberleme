@@ -35,7 +35,9 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
             // Sadece aktif kullanıcıya ait olanlar:
             var aktifKullaniciKelimeleri = kullaniciKelimeleri.Where(x => x.kullaniciId == aktifKullaniciId).ToList();
-
+            // ... önceki kodlar ...
+            // ... önceki kodlar ...
+            bool yeniKelimeEklendi = false;
             foreach (var kelime in kelimeler)
             {
                 var eslesen = aktifKullaniciKelimeleri.FirstOrDefault(x => x.kelimeId == kelime.kelimeId);
@@ -58,29 +60,38 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     };
                     kullaniciKelimeleri.Add(yeni);
                     kelime.kullaniciKelimeId = yeni.kullaniciKelimeId;
-                    File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
+                    yeniKelimeEklendi = true;
                 }
             }
+            // Sadece döngü bittikten sonra dosyaya yaz!
+            if (yeniKelimeEklendi)
+            {
+                File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
+            }
+
         }
 
 
         public void CevabiDegerlendir(string secilen)
         {
-            if (GuncelSoru == null)
-                return;
+            var soru = GuncelSoru;
+            if (soru == null) return;
 
-            if (secilen != null &&
-                (secilen.Trim().ToLower() == GuncelSoru.DogruKelime.trKelimeAdi.Trim().ToLower() ||
-                 secilen.Trim().ToLower() == GuncelSoru.DogruKelime.ingKelimeAdi.Trim().ToLower()))
+            bool dogru = secilen == soru.DogruSecenek;
+            if (dogru)
             {
                 totalDogru++;
-                // Sadece bir kez ekle
-                if (!_dogruCevaplananKullaniciKelimeIdler.Contains(GuncelSoru.DogruKelime.kullaniciKelimeId))
-                    _dogruCevaplananKullaniciKelimeIdler.Add(GuncelSoru.DogruKelime.kullaniciKelimeId);
+                if (soru.DogruKelime != null)
+                {
+                    soru.DogruKelime.dogruSayisi++;
+                    soru.DogruKelime.sonDogruTarihi = DateTime.Now;
+                }
+                _dogruCevaplananKullaniciKelimeIdler.Add(soru.DogruKelime.kullaniciKelimeId);
             }
-
             SoruIndex++;
         }
+
+
 
 
         public bool SinavBittiMi()
@@ -91,18 +102,18 @@ namespace _6_Seferde_Kelime_Ezeberleme
         public void DogruCevaplananlariGuncelle(List<int> dogruCevaplananKullaniciKelimeIdler)
         {
             string jsonPath = "kullanici_kelimeleri.json";
-            var json = File.ReadAllText(jsonPath);
-            var kelimeListesi = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
+            // 1. Dosyayı bir kez oku ve listeyi al
+            var kelimeListesi = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(File.ReadAllText(jsonPath));
 
+            // 2. Sadece güncellenecek id'ler üzerinde dön
             foreach (int id in dogruCevaplananKullaniciKelimeIdler)
             {
                 var kelime = kelimeListesi.FirstOrDefault(x => x.kullaniciKelimeId == id);
                 if (kelime != null)
                 {
-                    kelime.dogruSayisi += 1;
-                    kelime.sonDogruTarihi = DateTime.Now  ;
+                    kelime.dogruSayisi++;
+                    kelime.sonDogruTarihi = DateTime.Now; // Tarihi güncelle
 
-                    // Eğer doğru sayısı 6 veya fazlaysa, öğrenildi olarak işaretle
                     if (kelime.dogruSayisi >= 6)
                     {
                         kelime.ogrenildiMi = true;
@@ -110,23 +121,40 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 }
             }
 
-            // Güncellenmiş listeyi tekrar JSON dosyasına yaz
+            // 3. Güncellenmiş listeyi tekrar JSON dosyasına yaz
             File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kelimeListesi, Formatting.Indented));
         }
 
 
-        public void SinavSonuGuncelle()
+
+        public void SinavSonuGuncelle(List<Kelime> kelimeListesi)
         {
             try
             {
-                // 1. Doğru cevaplanan kullaniciKelimeId'leri al
-                var guncellenecekIdler = DogruCevaplananKullaniciKelimeIdler;
+                string jsonPath = "kullanici_kelimeleri.json";
+                var eskiVeriler = new List<KullaniciKelimeDurumu>();
 
-                // 2. Kontrol için göster
-                MessageBox.Show("Güncellenecek ID'ler: " + string.Join(",", guncellenecekIdler), "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Dosya varsa oku
+                if (File.Exists(jsonPath))
+                {
+                    string eskiJson = File.ReadAllText(jsonPath);
+                    eskiVeriler = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(eskiJson);
+                }
 
-                // 3. Güncelleme işlemini burada yap
-                // KullaniciKelimeDurumuHelper.KullaniciKelimeleriJsonGuncelle(guncellenecekIdler, ...);
+                // Sınavda kullanılan kelimeleri güncelle
+                foreach (var kelime in kelimeListesi)
+                {
+                    var kayit = eskiVeriler.FirstOrDefault(x => x.kullaniciKelimeId == kelime.kullaniciKelimeId && x.kullaniciId == kullaniciId);
+                    if (kayit != null)
+                    {
+                        kayit.dogruSayisi = kelime.dogruSayisi;
+                        kayit.sonDogruTarihi = kelime.sonDogruTarihi;
+                        kayit.ogrenildiMi = kelime.ogrenildiMi;
+                    }
+                }
+
+                // Tüm veriyi tekrar yaz (sadece güncellenenler değişir, diğerleri aynen kalır)
+                File.WriteAllText(jsonPath, JsonConvert.SerializeObject(eskiVeriler, Formatting.Indented));
             }
             catch (Exception ex)
             {
@@ -134,5 +162,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             }
         }
     }
+
 }
+
 

@@ -43,7 +43,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
-            kelimeListesi = KelimeYukleyici.KelimeleriYukle("sozluk.json");
+            kelimeListesi = KelimeYukleyici.KelimeleriKullaniciDurumuylaYukle(
+     "sozluk.json",
+     "kullanici_kelimeleri.json",
+     kullaniciId
+ );
             if (kelimeListesi == null || !kelimeListesi.Any())
             {
                 MessageBox.Show("Kelime listesi boş veya geçersiz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -109,10 +113,15 @@ namespace _6_Seferde_Kelime_Ezeberleme
             if (sinav.SinavBittiMi())
             {
                 timer1.Stop();
-                sinav.SinavSonuGuncelle(); // SADECE BUNU ÇAĞIR
+                sinav.SinavSonuGuncelle(this.kelimeListesi); // <-- BURAYA EKLE
                 MessageBox.Show($"Sınav Bitti! Doğru: {sinav.totalDogru} / {sinav.ToplamSoruSayisi}");
                 string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
-                KullaniciKelimeDurumuHelper.KullaniciKelimeleriJsonGuncelle(connectionString, "C:\\Users\\Ercüment Kocaoğlu\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\kullanici_kelimeleri.json");
+                KullaniciKelimeDurumuHelper.KullaniciKelimeleriJsonGuncelle(
+      connectionString,
+      "C:\\Users\\Ercüment Kocaoğlu\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\kullanici_kelimeleri.json",
+      kelimeListesi, // sınavda kullanılan ve güncellenen kelime listesi
+      kullaniciId    // aktif kullanıcı id
+  );
                 tabControl1.SelectedTab = tabPage1;
                 return;
             }

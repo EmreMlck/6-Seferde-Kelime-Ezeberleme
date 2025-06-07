@@ -12,9 +12,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
     {
         public static class Ayarlar
         {
-            public static int SoruSayisi { get; set; } = 10; // Varsayılan 10
+            public static int SoruSayisi { get; set; } = 5; 
 
-            // Gerekirse ayarları dosyaya kaydetme/yükleme ekleyebilirsin
         }
  
     }

@@ -26,9 +26,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
         public int dogruSayisi { get; set; } = 0;
         public DateTime? sonDogruTarihi { get; set; }
         public int kullaniciKelimeId { get; set; }
+        public bool ogrenildiMi { get; set; }
+
 
     }
-    
+
 
 
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
+using _6_Seferde_Kelime_Ezeberleme;
+using System.Linq;
 using Newtonsoft.Json;
 
 public class KullaniciKelimeDurumu
@@ -34,39 +36,31 @@ public class KullaniciKelimeDurumu
 
 public static class KullaniciKelimeDurumuHelper
 {
-    public static void KullaniciKelimeleriJsonGuncelle(string connectionString, string jsonDosyaYolu)
+    public static void KullaniciKelimeleriJsonGuncelle(
+      string connectionString,
+      string jsonPath,
+      List<Kelime> guncelKelimeler,
+      int aktifKullaniciId)
     {
-        try
+        var json = File.ReadAllText(jsonPath);
+        var kullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
+
+        foreach (var kelime in guncelKelimeler)
         {
-            var liste = new List<KullaniciKelimeDurumu>();
-            using (var conn = new SqlConnection(connectionString))
+            var kayit = kullaniciKelimeleri
+                .FirstOrDefault(x => x.kullaniciKelimeId == kelime.kullaniciKelimeId && x.kullaniciId == aktifKullaniciId);
+            if (kayit != null)
             {
-                conn.Open();
-                using (var cmd = new SqlCommand("SELECT kullaniciKelimeleriId, kullaniciId, kelimeId, dogruSayisi, sonDogruTarihi, ogrenildiMi, digerTestTarihi FROM KullaniciKelimeleri", conn))
-                using (var reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        liste.Add(new KullaniciKelimeDurumu
-                        {
-                            kullaniciKelimeId = reader.GetInt32(0),
-                            kullaniciId = reader.GetInt32(1),
-                            kelimeId = reader.GetInt32(2),
-                            dogruSayisi = reader.GetInt32(3),
-                            sonDogruTarihi = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4),
-                            ogrenildiMi = reader.GetBoolean(5),
-                            digerTestTarihi = reader.IsDBNull(6) ? (DateTime?)null : reader.GetDateTime(6)
-                        });
-                    }
-                }
+                kayit.dogruSayisi = kelime.dogruSayisi;
+                kayit.sonDogruTarihi = kelime.sonDogruTarihi;
             }
-            File.WriteAllText(jsonDosyaYolu, JsonConvert.SerializeObject(liste, Formatting.Indented));
         }
-        catch (Exception ex)
-        {
-            System.Windows.Forms.MessageBox.Show("JSON güncelleme hatası: " + ex.Message);
-        }
+
+        File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
     }
+
+
+
 
 }
 
