@@ -21,8 +21,8 @@
     "kullaniciKelimeId": 3,
     "kullaniciId": 1,
     "kelimeId": 3,
-    "dogruSayisi": 9,
-    "sonDogruTarihi": "2025-06-08T17:23:27.325799+03:00",
+    "dogruSayisi": 10,
+    "sonDogruTarihi": "2025-06-08T18:59:51.9514711+03:00",
     "ogrenildiMi": true,
     "digerTestTarihi": null
   },
@@ -39,10 +39,10 @@
     "kullaniciKelimeId": 5,
     "kullaniciId": 1,
     "kelimeId": 5,
-    "dogruSayisi": 5,
-    "sonDogruTarihi": "2025-06-08T18:36:29.2256453+03:00",
-    "ogrenildiMi": false,
-    "digerTestTarihi": "2025-12-08T18:36:29.2256453+03:00"
+    "dogruSayisi": 7,
+    "sonDogruTarihi": "2025-06-08T19:05:27.0991022+03:00",
+    "ogrenildiMi": true,
+    "digerTestTarihi": null
   },
   {
     "kullaniciKelimeId": 6,
@@ -66,10 +66,10 @@
     "kullaniciKelimeId": 8,
     "kullaniciId": 1,
     "kelimeId": 8,
-    "dogruSayisi": 4,
-    "sonDogruTarihi": "2025-06-08T14:56:01.219774+03:00",
-    "ogrenildiMi": false,
-    "digerTestTarihi": "2025-09-08T14:56:01.219774+03:00"
+    "dogruSayisi": 6,
+    "sonDogruTarihi": "2025-06-08T19:05:27.0991022+03:00",
+    "ogrenildiMi": true,
+    "digerTestTarihi": "2026-06-08T19:05:27.0991022+03:00"
   },
   {
     "kullaniciKelimeId": 9,
@@ -156,10 +156,10 @@
     "kullaniciKelimeId": 18,
     "kullaniciId": 1,
     "kelimeId": 18,
-    "dogruSayisi": 4,
-    "sonDogruTarihi": "2025-06-08T17:02:18.0507537+03:00",
+    "dogruSayisi": 5,
+    "sonDogruTarihi": "2025-06-08T19:01:45.6923853+03:00",
     "ogrenildiMi": false,
-    "digerTestTarihi": "2025-09-08T17:02:18.0507537+03:00"
+    "digerTestTarihi": "2025-12-08T19:01:45.6923853+03:00"
   },
   {
     "kullaniciKelimeId": 19,
@@ -174,10 +174,10 @@
     "kullaniciKelimeId": 20,
     "kullaniciId": 1,
     "kelimeId": 20,
-    "dogruSayisi": 4,
-    "sonDogruTarihi": "2025-06-08T17:15:59.8022377+03:00",
+    "dogruSayisi": 5,
+    "sonDogruTarihi": "2025-06-08T19:01:45.6923853+03:00",
     "ogrenildiMi": false,
-    "digerTestTarihi": "2025-09-08T17:15:59.8022377+03:00"
+    "digerTestTarihi": "2025-12-08T19:01:45.6923853+03:00"
   },
   {
     "kullaniciKelimeId": 21,
@@ -201,10 +201,10 @@
     "kullaniciKelimeId": 23,
     "kullaniciId": 1,
     "kelimeId": 23,
-    "dogruSayisi": 4,
-    "sonDogruTarihi": "2025-06-08T14:58:50.3813698+03:00",
+    "dogruSayisi": 5,
+    "sonDogruTarihi": "2025-06-08T19:05:27.0991022+03:00",
     "ogrenildiMi": false,
-    "digerTestTarihi": "2025-09-08T14:58:50.3813698+03:00"
+    "digerTestTarihi": "2025-12-08T19:05:27.0991022+03:00"
   },
   {
     "kullaniciKelimeId": 24,
@@ -219,10 +219,10 @@
     "kullaniciKelimeId": 25,
     "kullaniciId": 1,
     "kelimeId": 25,
-    "dogruSayisi": 5,
-    "sonDogruTarihi": "2025-06-08T17:13:48.1530894+03:00",
-    "ogrenildiMi": false,
-    "digerTestTarihi": "2025-12-08T17:13:48.1530894+03:00"
+    "dogruSayisi": 6,
+    "sonDogruTarihi": "2025-06-08T18:59:51.9514711+03:00",
+    "ogrenildiMi": true,
+    "digerTestTarihi": "2026-06-08T18:59:51.9514711+03:00"
   },
   {
     "kullaniciKelimeId": 26,
@@ -264,19 +264,19 @@
     "kullaniciKelimeId": 30,
     "kullaniciId": 1,
     "kelimeId": 30,
-    "dogruSayisi": 2,
-    "sonDogruTarihi": "2025-06-08T15:18:44.6167754+03:00",
+    "dogruSayisi": 3,
+    "sonDogruTarihi": "2025-06-08T18:59:51.9514711+03:00",
     "ogrenildiMi": false,
-    "digerTestTarihi": "2025-06-15T15:18:44.6167754+03:00"
+    "digerTestTarihi": "2025-07-08T18:59:51.9514711+03:00"
   },
   {
     "kullaniciKelimeId": 31,
     "kullaniciId": 1,
     "kelimeId": 31,
-    "dogruSayisi": 5,
-    "sonDogruTarihi": "2025-06-08T17:22:57.9873095+03:00",
-    "ogrenildiMi": false,
-    "digerTestTarihi": "2025-12-08T17:22:57.9873095+03:00"
+    "dogruSayisi": 6,
+    "sonDogruTarihi": "2025-06-08T19:01:45.6923853+03:00",
+    "ogrenildiMi": true,
+    "digerTestTarihi": "2026-06-08T19:01:45.6923853+03:00"
   },
   {
     "kullaniciKelimeId": 32,
@@ -300,8 +300,8 @@
     "kullaniciKelimeId": 34,
     "kullaniciId": 1,
     "kelimeId": 34,
-    "dogruSayisi": 7,
-    "sonDogruTarihi": "2025-06-08T17:13:48.1530894+03:00",
+    "dogruSayisi": 8,
+    "sonDogruTarihi": "2025-06-08T19:05:27.0991022+03:00",
     "ogrenildiMi": true,
     "digerTestTarihi": null
   },
@@ -390,10 +390,10 @@
     "kullaniciKelimeId": 44,
     "kullaniciId": 1,
     "kelimeId": 44,
-    "dogruSayisi": 6,
-    "sonDogruTarihi": "2025-06-08T17:15:17.7481678+03:00",
+    "dogruSayisi": 7,
+    "sonDogruTarihi": "2025-06-08T18:59:51.9514711+03:00",
     "ogrenildiMi": true,
-    "digerTestTarihi": "2026-06-08T17:15:17.7481678+03:00"
+    "digerTestTarihi": null
   },
   {
     "kullaniciKelimeId": 45,
@@ -453,8 +453,8 @@
     "kullaniciKelimeId": 51,
     "kullaniciId": 1,
     "kelimeId": 69,
-    "dogruSayisi": 7,
-    "sonDogruTarihi": "2025-06-08T17:19:01.4838733+03:00",
+    "dogruSayisi": 8,
+    "sonDogruTarihi": "2025-06-08T19:01:45.6923853+03:00",
     "ogrenildiMi": true,
     "digerTestTarihi": null
   },
@@ -462,10 +462,10 @@
     "kullaniciKelimeId": 52,
     "kullaniciId": 1,
     "kelimeId": 70,
-    "dogruSayisi": 2,
-    "sonDogruTarihi": "2025-06-08T17:02:28.6855353+03:00",
+    "dogruSayisi": 3,
+    "sonDogruTarihi": "2025-06-08T18:59:51.9514711+03:00",
     "ogrenildiMi": false,
-    "digerTestTarihi": "2025-06-15T17:02:28.6855353+03:00"
+    "digerTestTarihi": "2025-07-08T18:59:51.9514711+03:00"
   },
   {
     "kullaniciKelimeId": 53,

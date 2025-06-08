@@ -82,10 +82,22 @@ namespace _6_Seferde_Kelime_Ezeberleme
         }
         private void GuncelleChart()
         {
-            
-            var kelimeKategoriMap = kelimeler.ToDictionary(k => k.kelimeId, k => k.kategoriId);
 
-            
+            var kelimeKategoriMap = new Dictionary<int, int>();
+            foreach (var k in kelimeler)
+            {
+                if (!kelimeKategoriMap.ContainsKey(k.kelimeId))
+                {
+                    kelimeKategoriMap[k.kelimeId] = k.kategoriId;
+                }
+                else
+                {
+                    
+                    kelimeKategoriMap[k.kelimeId] = k.kategoriId; 
+                }
+            }
+
+
             var kategoriMap = kategoriler.ToDictionary(k => k.kategoriId, k => k.kategoriAdi);
 
             // tüm kategorileri baştan 0'la doldurulur
