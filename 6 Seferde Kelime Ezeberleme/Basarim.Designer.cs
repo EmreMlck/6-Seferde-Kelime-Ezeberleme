@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.butonBasarimGeri = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // butonBasarimGeri
             // 
             this.butonBasarimGeri.BackColor = System.Drawing.Color.DimGray;
             this.butonBasarimGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.butonBasarimGeri.Location = new System.Drawing.Point(503, 518);
+            this.butonBasarimGeri.Location = new System.Drawing.Point(810, 494);
             this.butonBasarimGeri.Name = "butonBasarimGeri";
             this.butonBasarimGeri.Size = new System.Drawing.Size(131, 43);
             this.butonBasarimGeri.TabIndex = 10;
@@ -43,16 +48,35 @@
             this.butonBasarimGeri.UseVisualStyleBackColor = false;
             this.butonBasarimGeri.Click += new System.EventHandler(this.butonBasarimGeri_Click);
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(52, 37);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(907, 415);
+            this.chart1.TabIndex = 11;
+            this.chart1.Text = "chart1";
+            
+            // 
             // Basarim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(673, 597);
+            this.ClientSize = new System.Drawing.Size(994, 597);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.butonBasarimGeri);
             this.Name = "Basarim";
             this.Text = "Basarim";
             this.Load += new System.EventHandler(this.Basarim_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -60,5 +84,6 @@
         #endregion
 
         private System.Windows.Forms.Button butonBasarimGeri;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

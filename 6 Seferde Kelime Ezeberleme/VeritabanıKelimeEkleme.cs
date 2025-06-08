@@ -13,7 +13,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 {
     internal class VeritabanıKelimeEkleme
     {
-        string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+        string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
         public void kelimeEkleme(string tr, string en, string resim, int kategoriId)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -35,7 +35,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         
                         try
                         {
-                            string jsonDosyaYolu = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
+                            string jsonDosyaYolu = @"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
                             List<Kelime> guncelKelimelerListesi = new List<Kelime>();
 
                             if (File.Exists(jsonDosyaYolu))
@@ -85,7 +85,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             public static void KullaniciKelimeJsonOlustur(int kullaniciId, string connectionString, string jsonDosyaYolu)
             {
-                // 1. Tüm kelimeleri veritabanından çek
+                
                 List<int> tumKelimeIdler = new List<int>();
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -100,7 +100,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                 }
 
-                // 2. Kullanıcıya ait mevcut kelimeleri çek (varsa)
+                
                 HashSet<int> kullaniciKelimeIdSet = new HashSet<int>();
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -118,7 +118,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                 }
 
-                // 3. Eksik olan kelimeler için KullaniciKelimeDurumu nesneleri oluştur
+               
                 List<KullaniciKelimeDurumu> kullaniciKelimeleri = new List<KullaniciKelimeDurumu>();
                 foreach (var kelimeId in tumKelimeIdler)
                 {
@@ -136,7 +136,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                 }
 
-                // 4. JSON dosyasına yaz
+                
                 string json = JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented);
                 File.WriteAllText(jsonDosyaYolu, json);
             }

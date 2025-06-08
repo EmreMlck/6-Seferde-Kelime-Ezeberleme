@@ -34,6 +34,16 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
 
     }
+    public class KullaniciKelime
+    {
+        public int kullaniciKelimeId { get; set; }
+        public int kullaniciId { get; set; }
+        public int kelimeId { get; set; }
+        public int dogruSayisi { get; set; }
+        public DateTime? sonDogruTarihi { get; set; }
+        public bool ogrenildiMi { get; set; }
+        public DateTime? digerTestTarihi { get; set; }
+    }
 
 
 

@@ -9,7 +9,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 {
     public static class KelimeSenkranizasyonu
     {
-        static string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+        static string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
 
         public static List<Kelime> TumKelimeleriGetir()
         {
@@ -129,11 +129,10 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         {
                             // Ekle
                             string insertSorgu = @"INSERT INTO KullaniciKelimeleri 
-                        (kullaniciKelimeleriId, kullaniciId, kelimeId, dogruSayisi, sonDogruTarihi, ogrenildiMi, digerTestTarihi)
-                        VALUES (@kullaniciKelimeleriId, @kullaniciId, @kelimeId, @dogruSayisi, @sonDogruTarihi, @ogrenildiMi, @digerTestTarihi)";
+    (kullaniciId, kelimeId, dogruSayisi, sonDogruTarihi, ogrenildiMi, digerTestTarihi)
+    VALUES (@kullaniciId, @kelimeId, @dogruSayisi, @sonDogruTarihi, @ogrenildiMi, @digerTestTarihi)";
                             using (SqlCommand insertCmd = new SqlCommand(insertSorgu, conn))
                             {
-                                insertCmd.Parameters.AddWithValue("@kullaniciKelimeleriId", kelime.kullaniciKelimeId);
                                 insertCmd.Parameters.AddWithValue("@kullaniciId", kelime.kullaniciId);
                                 insertCmd.Parameters.AddWithValue("@kelimeId", kelime.kelimeId);
                                 insertCmd.Parameters.AddWithValue("@dogruSayisi", kelime.dogruSayisi);
@@ -142,6 +141,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                                 insertCmd.Parameters.AddWithValue("@digerTestTarihi", (object)kelime.digerTestTarihi ?? DBNull.Value);
                                 insertCmd.ExecuteNonQuery();
                             }
+
                         }
                     }
                 }

@@ -17,7 +17,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             try
             {
 
-                string json = File.ReadAllText(@"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json");
+                string json = File.ReadAllText(@"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json");
                 var liste = JsonConvert.DeserializeObject<List<Kelime>>(json);
                 return liste ?? new List<Kelime>();
             }
@@ -33,11 +33,10 @@ namespace _6_Seferde_Kelime_Ezeberleme
             string json = JsonConvert.SerializeObject(veritabaniKelimeleri, Formatting.Indented);
             File.WriteAllText(jsonDosyaYolu, json);
         }
-        // Tekrar quizine uygun kelimeleri seçen fonksiyon
-        
+        // Tekrar quizine uygun kelimeler 
         public static List<Kelime> TekrarQuizKelimeleriSec(List<Kelime> sozluk, List<KullaniciKelimeDurumu> kullaniciDurum)
         {
-            // 1. Kullanıcıya ait 6 kez doğru bilinmeyen kelimeleri bul
+            // 1. Kullanıcıya ait 6 defa doğru bilinmeyen kelimeler
             var tekrarKelimeleri = (from kelime in sozluk
                                     join durum in kullaniciDurum on kelime.kelimeId equals durum.kelimeId
                                     where durum.dogruSayisi < 6
@@ -45,7 +44,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                                     select kelime).ToList();
 
 
-            // 2. 10 kelime seç (varsa)
+            
             var random = new Random();
             return tekrarKelimeleri.OrderBy(x => random.Next()).Take(10).ToList();
         }
@@ -53,7 +52,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             try
             {
-                string json = File.ReadAllText(@"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\kullanici_kelimeleri.json");
+                string json = File.ReadAllText(@"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\kullanici_kelimeleri.json");
                 var liste = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
                 return liste ?? new List<KullaniciKelimeDurumu>();
             }

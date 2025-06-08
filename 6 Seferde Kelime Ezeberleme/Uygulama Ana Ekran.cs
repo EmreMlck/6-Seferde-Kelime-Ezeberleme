@@ -113,7 +113,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button1_Click(object sender, EventArgs e)
         {
             AyarlarModülü ayarForm = new AyarlarModülü();
-            ayarForm.ShowDialog(); // Ayarlar formunu modal olarak aç
+            ayarForm.ShowDialog(); 
 
     
         }

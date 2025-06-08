@@ -44,29 +44,29 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
-            // Tüm kelimeleri yükle
-            var tumKelimeler = KelimeYukleyici.KelimeleriYukle("C:\\Users\\Ercüment Kocaoğlu\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\sozluk.json");
+            
+            var tumKelimeler = KelimeYukleyici.KelimeleriYukle("C:\\Users\\HP\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\sozluk.json");
 
-            // Kullanıcıya ait kelime durumlarını yükle
+            
             var kullaniciKelimeleri = KelimeYukleyici.KullaniciKelimeleriniYukle("kullanici_kelimeleri.json");
 
 
 
-            // Kullanıcıya ait kelime ID'lerini al
+            
             var kullaniciKelimeIdleri = kullaniciKelimeleri
                 .Where(k => k.kullaniciId == kullaniciId)
                 .Select(k => k.kelimeId)
                 .ToList();
 
-            // Sadece kullanıcıya ait kelimeleri filtrele
+            
             kelimeListesi = tumKelimeler
                 .Where(k => kullaniciKelimeIdleri.Contains(k.kelimeId))
                 .ToList();
-            // Kelime listesini yükledikten sonra:
+            
             if (kelimeListesi == null || kelimeListesi.Count == 0)
             {
                 MessageBox.Show("Çalışılacak kelime bulunamadı. Lütfen önce kelime ekleyin veya filtreleri kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close(); // veya sınav ekranını kapat
+                this.Close(); 
                 return;
             }
 
@@ -114,14 +114,14 @@ namespace _6_Seferde_Kelime_Ezeberleme
             if (sinav.SinavBittiMi())
             {
                 timer1.Stop();
-                sinav.SinavSonuGuncelle(this.kelimeListesi); // <-- BURAYA EKLE
+                sinav.SinavSonuGuncelle(this.kelimeListesi); 
                 MessageBox.Show($"Sınav Bitti! Doğru: {sinav.totalDogru} / {sinav.ToplamSoruSayisi}");
-                string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+                string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
                 KullaniciKelimeDurumuHelper.KullaniciKelimeleriJsonGuncelle(
       connectionString,
-      "C:\\Users\\Ercüment Kocaoğlu\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\kullanici_kelimeleri.json",
-      kelimeListesi, // sınavda kullanılan ve güncellenen kelime listesi
-      kullaniciId    // aktif kullanıcı id
+      "C:\\Users\\HP\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\kullanici_kelimeleri.json",
+      kelimeListesi, 
+      kullaniciId    
   );
                 tabControl1.SelectedTab = tabPage1;
                 return;
@@ -147,14 +147,14 @@ namespace _6_Seferde_Kelime_Ezeberleme
             rBC.Text = secenekler[2];
             rBD.Text = secenekler[3];
 
-            // Önceki seçimleri temizle
+            // Önceki seçimlerimizi temizlemek için
             rBA.Checked = false;
             rBB.Checked = false;
             rBC.Checked = false;
             rBD.Checked = false;
 
-            // Zamanlayıcı ve süre ayarı
-            timer1.Stop();
+            
+            timer1.Stop(); // sure ayarımız
             kalanSure = 20;
             labelSayac.Text = "Kalan Süre : " + kalanSure;
             timer1.Start();

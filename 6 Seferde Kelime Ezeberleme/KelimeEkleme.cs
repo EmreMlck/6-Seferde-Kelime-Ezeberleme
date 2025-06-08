@@ -28,9 +28,9 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void KelimeEkleme_Load(object sender, EventArgs e)
         {
-            
-            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
-            
+
+            string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
+
             List<Kategori> kategoriler = new List<Kategori>();
 
             using (SqlConnection conn = new SqlConnection(connectionString))

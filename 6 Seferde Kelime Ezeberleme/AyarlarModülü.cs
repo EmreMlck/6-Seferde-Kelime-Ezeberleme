@@ -31,7 +31,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
-            if (ilkAcilis) return; // Form ilk açılırken event tetiklenirse atla
+            if (ilkAcilis) return; 
             KullanıcıAyarları.Ayarlar.SoruSayisi = (int)numericSoruSayisi.Value;
 
 

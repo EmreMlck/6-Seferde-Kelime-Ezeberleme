@@ -25,7 +25,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         List<string> tumTahminler = new List<string>();
 
         TextBox[,] GridOlusturma;
-       
+
 
         public Wordle(string kullaniciAdi, int aktifKullaniciId)
         {
@@ -42,19 +42,19 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void butonBasarimGeri_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Uygulama_Ana_Ekran WordleAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi,kullaniciId );
+            Uygulama_Ana_Ekran WordleAnaEkrana = new Uygulama_Ana_Ekran(kullaniciAdi, kullaniciId);
             WordleAnaEkrana.FormClosed += (s, args) => this.Close();
             WordleAnaEkrana.Show();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
-        
+
+
         }
         private void GridOlustur(int uzunlukTahminDegiskeni)
         {
-            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+            string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
             kelime = "";
             kelimeUzunluk = 0;
             uzunlukTahmin = uzunlukTahminDegiskeni;
@@ -106,7 +106,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             {
                 for (int sütun = 0; sütun < kelimeUzunluk; sütun++)
                 {
-                    TextBox metin = new TextBox(); 
+                    TextBox metin = new TextBox();
                     metin.MaxLength = 1; // kutucuğa maks 1 harf
                     metin.Dock = DockStyle.Fill;
                     metin.TextAlign = HorizontalAlignment.Center;
@@ -127,9 +127,60 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 MessageBox.Show("Sadece harf girişi yapılabilir!");
             }
         }
+        private void RenkleriAyala(int satirNo, string tahmin)
+        {
+            // Kelimedeki harflerin sayısını tutuyoruz
+            Dictionary<char, int> kelimeHarfSayilari = new Dictionary<char, int>();
+
+            foreach (char c in kelime.ToUpper())
+            {
+                if (kelimeHarfSayilari.ContainsKey(c))
+                    kelimeHarfSayilari[c]++;
+                else
+                    kelimeHarfSayilari[c] = 1;
+            }
+
+            Color[] renkler = new Color[kelimeUzunluk];
+
+            // doğru pozisyon
+            for (int i = 0; i < kelimeUzunluk; i++)
+            {
+                if (tahmin[i] == kelime.ToUpper()[i])
+                {
+                    renkler[i] = Color.Green;
+                    kelimeHarfSayilari[tahmin[i]]--;
+                }
+                else
+                {
+                    renkler[i] = Color.Gray; // şimdilik gri sonra sarı olacak
+                }
+            }
+
+            //harf var ama yanlış yerde
+            for (int i = 0; i < kelimeUzunluk; i++)
+            {
+                if (renkler[i] == Color.Gray) //gri ise kontrol et
+                {
+                    char harf = tahmin[i];
+                    if (kelimeHarfSayilari.ContainsKey(harf) && kelimeHarfSayilari[harf] > 0)
+                    {
+                        renkler[i] = Color.Goldenrod; // sarı benzeri renk
+                        kelimeHarfSayilari[harf]--;
+                    }
+                }
+            }
+
+            // TB renkleri
+            for (int i = 0; i < kelimeUzunluk; i++)
+            {
+                GridOlusturma[satirNo, i].BackColor = renkler[i];
+                GridOlusturma[satirNo, i].ReadOnly = true; // tahmin yapıldıktan sonra değişmesin
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (aktifSatir >= uzunlukTahmin) // aktif satır 0 dan başladığı için eşitlik de olacak
+            if (aktifSatir >= uzunlukTahmin)
             {
                 MessageBox.Show("Tahmin hakkınız kalmadı!");
                 return;
@@ -156,29 +207,36 @@ namespace _6_Seferde_Kelime_Ezeberleme
             if (tahmin.Equals(kelime.ToUpper(), StringComparison.OrdinalIgnoreCase))
             {
                 MessageBox.Show("Doğru tahmin yaptınız, TEBRİKLER!");
-                for(int i = aktifSatir; i < uzunlukTahmin; i++)
+                RenkleriAyala(aktifSatir, tahmin);
+                if (tahmin.Equals(kelime.ToUpper(), StringComparison.OrdinalIgnoreCase))
                 {
-                    SatirKapat(i, true); // yeşil
+                    MessageBox.Show("Doğru tahmin yaptınız, TEBRİKLER!");
+                    RenkleriAyala(aktifSatir, tahmin);  
+                    SatirKapat(aktifSatir, true);        
+                                                         
                 }
-                
+
             }
             else
             {
+                RenkleriAyala(aktifSatir, tahmin);
                 MessageBox.Show("Yanlış tahmin, tekrar deneyin.");
-                SatirKapat(aktifSatir, false); // gri
                 MessageBox.Show(kelime);
                 aktifSatir++;
             }
         }
 
-        private void SatirKapat(int satirNo, bool dogruMu) 
+
+        private void SatirKapat(int satirNo, bool dogruMu)
         {
-            for(int sutun = 0; sutun < kelimeUzunluk; sutun++)
+            for (int sutun = 0; sutun < kelimeUzunluk; sutun++)
             {
                 GridOlusturma[satirNo, sutun].ReadOnly = true;
-                GridOlusturma[satirNo, sutun].BackColor = dogruMu ? Color.Green : Color.Gray;
+                if (dogruMu)
+                    GridOlusturma[satirNo, sutun].BackColor = Color.Green;
             }
         }
+
 
     }
 }

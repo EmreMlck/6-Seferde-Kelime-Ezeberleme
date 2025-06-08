@@ -29,14 +29,14 @@ namespace _6_Seferde_Kelime_Ezeberleme
             _dogruCevaplananKullaniciKelimeIdler.Clear();
             Sorular = secilenler.Select(k => new Soru(k, kelimeler)).ToList();
 
-            // --- BURAYA EKLE ---
+            
             string jsonPath = "kullanici_kelimeleri.json";
             var json = File.ReadAllText(jsonPath);
             var kullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
 
-            // Sadece aktif kullanıcıya ait olanlar:
+            
             var aktifKullaniciKelimeleri = kullaniciKelimeleri.Where(x => x.kullaniciId == aktifKullaniciId).ToList();
-            // ... önceki kodlar ...
+            
             bool yeniKelimeEklendi = false;
             foreach (var kelime in kelimeler)
             {
@@ -47,7 +47,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 }
                 else
                 {
-                    // Eksikse otomatik ekle
+                    // eksikse otomatik eklenir
                     var yeni = new KullaniciKelimeDurumu
                     {
                         kullaniciKelimeId = kullaniciKelimeleri.Any() ? kullaniciKelimeleri.Max(x => x.kullaniciKelimeId) + 1 : 1,
@@ -63,7 +63,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     yeniKelimeEklendi = true;
                 }
             }
-            // Sadece döngü bittikten sonra dosyaya yaz!
+            
             if (yeniKelimeEklendi)
             {
                 File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
@@ -102,17 +102,17 @@ namespace _6_Seferde_Kelime_Ezeberleme
         public void DogruCevaplananlariGuncelle(List<int> dogruCevaplananKullaniciKelimeIdler)
         {
             string jsonPath = "kullanici_kelimeleri.json";
-            // 1. Dosyayı bir kez oku ve listeyi al
+            
             var kelimeListesi = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(File.ReadAllText(jsonPath));
 
-            // 2. Sadece güncellenecek id'ler üzerinde dön
+            
             foreach (int id in dogruCevaplananKullaniciKelimeIdler)
             {
                 var kelime = kelimeListesi.FirstOrDefault(x => x.kullaniciKelimeId == id);
                 if (kelime != null)
                 {
                     kelime.dogruSayisi++;
-                    kelime.sonDogruTarihi = DateTime.Now; // Tarihi güncelle
+                    kelime.sonDogruTarihi = DateTime.Now; // tarih güncellenir
 
                     if (kelime.dogruSayisi >= 6)
                     {
@@ -121,7 +121,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 }
             }
 
-            // 3. Güncellenmiş listeyi tekrar JSON dosyasına yaz
+            // güncellenmiş liste tekrar JSON dosyasına yazılır
             File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kelimeListesi, Formatting.Indented));
         }
 
@@ -131,11 +131,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             try
             {
-                // Doğru cevaplanan kullaniciKelimeId'leri al
+                
                 var guncellenecekIdler = DogruCevaplananKullaniciKelimeIdler;
 
-                // JSON dosyasını oku (tüm kullanıcı kelimeleri)
-                string jsonPath = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\kullanici_kelimeleri.json";
+                
+                string jsonPath = @"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\kullanici_kelimeleri.json";
 
                 var tumKullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(File.ReadAllText(jsonPath));
 
@@ -177,7 +177,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     }
                 }
 
-                // Güncellenmiş listeyi tekrar JSON dosyasına yaz
+                // Güncellenmiş listeyi JSON'a yazılır
                 File.WriteAllText(jsonPath, JsonConvert.SerializeObject(tumKullaniciKelimeleri, Formatting.Indented));
                 KelimeSenkranizasyonu.KullaniciKelimeleriniVeritabaninaYansit(tumKullaniciKelimeleri);
 

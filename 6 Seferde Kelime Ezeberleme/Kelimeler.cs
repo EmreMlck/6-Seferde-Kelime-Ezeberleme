@@ -58,7 +58,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void Kelimeler_Load(object sender, EventArgs e)
         {
-            string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+            string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -78,7 +78,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             if (e.ColumnIndex == dataGridKelimeler.Columns["Sil"].Index && e.RowIndex >= 0)
             {
-                // Satır geçerli mi kontrolü
+                
                 if (e.RowIndex < 0 || e.RowIndex >= dataGridKelimeler.Rows.Count)
                     return;
                 if (dataGridKelimeler.Rows[e.RowIndex].IsNewRow)
@@ -93,8 +93,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 var result = MessageBox.Show($"{ingKelime} / {trKelime} silinsin mi?", "Onay", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    // 1. Veritabanından sil
-                    string connectionString = "Server=DESKTOP-57KV21F;Database=kelimeEzberleme;User Id=veritabani;Password=070901;";
+                    // Veritabanından sileceğiz
+                    string connectionString = "Server=EmreMlck\\SQLEXPRESS;Database=kelimeEzberleme;User Id=emremlck;Password=12345;";
                     using (SqlConnection conn = new SqlConnection(connectionString))
                     {
                         conn.Open();
@@ -107,8 +107,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         }
                     }
 
-                    // 2. JSON'dan sil
-                    string jsonDosyaYolu = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
+                    // JSON'dan sileceğiz
+                    string jsonDosyaYolu = @"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
                     if (File.Exists(jsonDosyaYolu))
                     {
                         var eskiJson = File.ReadAllText(jsonDosyaYolu);
@@ -121,9 +121,9 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         File.WriteAllText(jsonDosyaYolu, yeniJson);
                     }
 
-                    // Event tetiklenmesini engelle
+                    
                     dataGridKelimeler.CellContentClick -= dataGridView1_CellContentClick;
-                    Kelimeler_Load(null, null); // Tabloyu güncelle
+                    Kelimeler_Load(null, null); // Tablo güncelleme
                     dataGridKelimeler.CellContentClick += dataGridView1_CellContentClick;
                 }
             }
@@ -139,11 +139,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void buttonSenkranizazyon_Click(object sender, EventArgs e)
         {
-            // 1. Veritabanındaki tüm kelimeleri çek
+            // Veritabanındaki tüm kelimeler çekilir
             List<Kelime> dbKelimeler = KelimeSenkranizasyonu.TumKelimeleriGetir();
 
-            // 2. Eski JSON'u oku
-            string jsonDosyaYolu = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
+            // Eski JSON okunur
+            string jsonDosyaYolu = @"C:\Users\HP\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
 
 
             MessageBox.Show("Senkronizasyon tamamlandı!");
@@ -154,7 +154,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 eskiJsonKelimeler = JsonConvert.DeserializeObject<List<Kelime>>(eskiJson) ?? new List<Kelime>();
             }
 
-            // 3. Resim URL'lerini koru
+            // Resim URL'leri korunuz
             foreach (var dbKelime in dbKelimeler)
             {
                 var eski = eskiJsonKelimeler.FirstOrDefault(j =>

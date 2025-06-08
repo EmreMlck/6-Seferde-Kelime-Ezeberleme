@@ -17,7 +17,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             DogruKelime = dogruKelime;
             Secenekler = new List<string> { dogruKelime.trKelimeAdi };
 
-            // Yanlış cevaplar
+            
             var yanlislar = tumKelimeler
                 .Where(k => k.trKelimeAdi != dogruKelime.trKelimeAdi)
                 .OrderBy(x => Guid.NewGuid())
@@ -29,7 +29,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
                                   .OrderBy(x => Guid.NewGuid())
                                   .ToList();
 
-            Secenekler = Secenekler.OrderBy(x => Guid.NewGuid()).ToList(); // Şıkları karıştır
+            Secenekler = Secenekler.OrderBy(x => Guid.NewGuid()).ToList(); 
         }
     }
 
