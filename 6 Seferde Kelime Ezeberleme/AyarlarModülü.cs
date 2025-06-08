@@ -13,23 +13,27 @@ namespace _6_Seferde_Kelime_Ezeberleme
 {
     public partial class AyarlarModülü : Form
     {
+        private bool ilkAcilis = true;
         public AyarlarModülü()
         {
             InitializeComponent();
+            this.Load += Ayarlar_Load;
         }
 
         private void Ayarlar_Load(object sender, EventArgs e)
         {
             numericSoruSayisi.Minimum = 5;
             numericSoruSayisi.Maximum = 10;
-            numericSoruSayisi.Value = Ayarlar.SoruSayisi;
+            numericSoruSayisi.Value = KullanıcıAyarları.Ayarlar.SoruSayisi;
+            ilkAcilis = false;
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
-            Ayarlar.SoruSayisi = (int)numericSoruSayisi.Value;
-           
+            if (ilkAcilis) return; // Form ilk açılırken event tetiklenirse atla
+            KullanıcıAyarları.Ayarlar.SoruSayisi = (int)numericSoruSayisi.Value;
+
 
         }
 

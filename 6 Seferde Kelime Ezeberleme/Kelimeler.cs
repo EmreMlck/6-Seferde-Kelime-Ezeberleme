@@ -64,7 +64,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             {
                 string sorgu = @"SELECT K.ingKelimeAdi, K.trKelimeAdi, kat.kategoriAdi 
                  FROM Kelimeler K 
-                 JOIN kelimeKategori kat ON K.kategoriId = kat.kategoriId";
+                 LEFT JOIN kelimeKategori kat ON K.kategoriId = kat.kategoriId";
 
                 SqlDataAdapter dataAd = new SqlDataAdapter(sorgu, conn);
                 DataTable dtable = new DataTable();
@@ -78,8 +78,17 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             if (e.ColumnIndex == dataGridKelimeler.Columns["Sil"].Index && e.RowIndex >= 0)
             {
-                string ingKelime = dataGridKelimeler.Rows[e.RowIndex].Cells[0].Value.ToString();
-                string trKelime = dataGridKelimeler.Rows[e.RowIndex].Cells[1].Value.ToString();
+                // Satır geçerli mi kontrolü
+                if (e.RowIndex < 0 || e.RowIndex >= dataGridKelimeler.Rows.Count)
+                    return;
+                if (dataGridKelimeler.Rows[e.RowIndex].IsNewRow)
+                    return;
+
+                string ingKelime = dataGridKelimeler.Rows[e.RowIndex].Cells[0].Value?.ToString();
+                string trKelime = dataGridKelimeler.Rows[e.RowIndex].Cells[1].Value?.ToString();
+
+                if (string.IsNullOrEmpty(ingKelime) || string.IsNullOrEmpty(trKelime))
+                    return;
 
                 var result = MessageBox.Show($"{ingKelime} / {trKelime} silinsin mi?", "Onay", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
@@ -104,7 +113,6 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     {
                         var eskiJson = File.ReadAllText(jsonDosyaYolu);
                         var kelimeler = JsonConvert.DeserializeObject<List<Kelime>>(eskiJson) ?? new List<Kelime>();
-                        // Hem Türkçe hem İngilizce eşleşenleri sil
                         kelimeler.RemoveAll(k =>
                             (k.trKelimeAdi == trKelime && k.ingKelimeAdi == ingKelime) ||
                             (k.trKelimeAdi == ingKelime && k.ingKelimeAdi == trKelime)
@@ -113,7 +121,10 @@ namespace _6_Seferde_Kelime_Ezeberleme
                         File.WriteAllText(jsonDosyaYolu, yeniJson);
                     }
 
+                    // Event tetiklenmesini engelle
+                    dataGridKelimeler.CellContentClick -= dataGridView1_CellContentClick;
                     Kelimeler_Load(null, null); // Tabloyu güncelle
+                    dataGridKelimeler.CellContentClick += dataGridView1_CellContentClick;
                 }
             }
         }
@@ -133,6 +144,9 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
             // 2. Eski JSON'u oku
             string jsonDosyaYolu = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
+
+
+            MessageBox.Show("Senkronizasyon tamamlandı!");
             List<Kelime> eskiJsonKelimeler = new List<Kelime>();
             if (File.Exists(jsonDosyaYolu))
             {
@@ -148,11 +162,19 @@ namespace _6_Seferde_Kelime_Ezeberleme
                     j.ingKelimeAdi == dbKelime.ingKelimeAdi);
 
                 if (eski != null && !string.IsNullOrEmpty(eski.resim))
+                {
                     dbKelime.resim = eski.resim;
+                    dbKelime.kelimeId = eski.kelimeId;
+                }
             }
 
-            // 4. JSON'u güncelle
-            string yeniJson = JsonConvert.SerializeObject(dbKelimeler, Formatting.Indented);
+            var ayarlar = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore,
+                DefaultValueHandling = DefaultValueHandling.Ignore
+            };
+            string yeniJson = JsonConvert.SerializeObject(dbKelimeler, ayarlar);
             File.WriteAllText(jsonDosyaYolu, yeniJson);
 
             MessageBox.Show("JSON dosyası veritabanı ile tamamen senkronize edildi!");

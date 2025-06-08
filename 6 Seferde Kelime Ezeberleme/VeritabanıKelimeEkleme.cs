@@ -22,14 +22,17 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
                 try
                 {
-                    string eklenecek = "INSERT INTO Kelimeler(trKelimeAdi, ingKelimeAdi, resim, kategoriId) VALUES(@tr, @en, @resim, @kategoriId)";
+                    string eklenecek = "INSERT INTO Kelimeler(trKelimeAdi, ingKelimeAdi, resim, kategoriId) " +
+                     "OUTPUT INSERTED.kelimeId " +
+                     "VALUES(@tr, @en, @resim, @kategoriId)";
                     using (SqlCommand cmd = new SqlCommand(eklenecek, conn))
                     {
                         cmd.Parameters.AddWithValue("@tr", tr);
                         cmd.Parameters.AddWithValue("@en", en);
                         cmd.Parameters.AddWithValue("@resim", resim);
                         cmd.Parameters.AddWithValue("@kategoriId", kategoriId);
-                        cmd.ExecuteNonQuery();
+                        int yeniKelimeId = Convert.ToInt32(cmd.ExecuteScalar());
+                        
                         try
                         {
                             string jsonDosyaYolu = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\sozluk.json";
@@ -46,7 +49,8 @@ namespace _6_Seferde_Kelime_Ezeberleme
                                 trKelimeAdi = tr,
                                 ingKelimeAdi = en,
                                 resim = resim,
-                                kategoriId = kategoriId
+                                kategoriId = kategoriId,
+                                kelimeId = yeniKelimeId
                             });
 
                             string json = JsonConvert.SerializeObject(guncelKelimelerListesi, Formatting.Indented);

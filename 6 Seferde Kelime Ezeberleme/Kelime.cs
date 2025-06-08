@@ -21,9 +21,13 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         [JsonProperty("resim")]
         public string resim { get; set; }
-        public int kullaniciId { get; set; }
+
+        [JsonProperty("kelimeId", DefaultValueHandling = DefaultValueHandling.Include)]
         public int kelimeId { get; set; }
-        public int dogruSayisi { get; set; } = 0;
+
+        public int kullaniciId { get; set; }
+
+        public int dogruSayisi { get; set; }=0;
         public DateTime? sonDogruTarihi { get; set; }
         public int kullaniciKelimeId { get; set; }
         public bool ogrenildiMi { get; set; }

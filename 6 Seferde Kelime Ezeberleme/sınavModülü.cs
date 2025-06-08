@@ -17,9 +17,10 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private SinavYonetici sinav;
         int kalanSure = 20;
         private int kullaniciId;
+        int soruSayisi = KullanıcıAyarları.Ayarlar.SoruSayisi;
 
 
-        public sınavModülü(string kullaniciAdi, int aktifKullaniciId)
+        public sınavModülü(string kullaniciAdi, int aktifKullaniciId, int soruSayisi)
         {
             InitializeComponent();
             this.kullaniciAdi = kullaniciAdi;
@@ -43,11 +44,33 @@ namespace _6_Seferde_Kelime_Ezeberleme
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
-            kelimeListesi = KelimeYukleyici.KelimeleriKullaniciDurumuylaYukle(
-     "sozluk.json",
-     "kullanici_kelimeleri.json",
-     kullaniciId
- );
+            // Tüm kelimeleri yükle
+            var tumKelimeler = KelimeYukleyici.KelimeleriYukle("C:\\Users\\Ercüment Kocaoğlu\\Source\\Repos\\6-Seferde-Kelime-Ezeberleme\\6 Seferde Kelime Ezeberleme\\sozluk.json");
+
+            // Kullanıcıya ait kelime durumlarını yükle
+            var kullaniciKelimeleri = KelimeYukleyici.KullaniciKelimeleriniYukle("kullanici_kelimeleri.json");
+
+
+
+            // Kullanıcıya ait kelime ID'lerini al
+            var kullaniciKelimeIdleri = kullaniciKelimeleri
+                .Where(k => k.kullaniciId == kullaniciId)
+                .Select(k => k.kelimeId)
+                .ToList();
+
+            // Sadece kullanıcıya ait kelimeleri filtrele
+            kelimeListesi = tumKelimeler
+                .Where(k => kullaniciKelimeIdleri.Contains(k.kelimeId))
+                .ToList();
+            // Kelime listesini yükledikten sonra:
+            if (kelimeListesi == null || kelimeListesi.Count == 0)
+            {
+                MessageBox.Show("Çalışılacak kelime bulunamadı. Lütfen önce kelime ekleyin veya filtreleri kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close(); // veya sınav ekranını kapat
+                return;
+            }
+
+
             if (kelimeListesi == null || !kelimeListesi.Any())
             {
                 MessageBox.Show("Kelime listesi boş veya geçersiz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -66,28 +89,6 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             kelimeListesi = KelimeYukleyici.KelimeleriYukle("sozluk.json");
             gunlukQuiz.Enabled = kelimeListesi.Count >= 10;
-        }
-
-        private void tekrarQuiz_Click(object sender, EventArgs e)
-        {
-                kelimeListesi = KelimeYukleyici.KelimeleriYukle("sozluk.json");
-                if (kelimeListesi == null || !kelimeListesi.Any())
-                {
-                     MessageBox.Show("Kelime listesi boş veya geçersiz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            // Tekrar quizine uygun kelimeleri seç
-
-            var kullaniciDurum = KelimeYukleyici.KullaniciKelimeleriniYukle("kullanici_kelimeleri.json");
-            var quizKelimeleri = KelimeYukleyici.TekrarQuizKelimeleriSec(kelimeListesi, kullaniciDurum);
-            if (quizKelimeleri == null || !quizKelimeleri.Any())
-            {
-                MessageBox.Show("Tekrar quizine uygun kelime bulunamadı.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            sinav = new SinavYonetici(quizKelimeleri ,  kullaniciId );
-             tabControl1.SelectedTab = tabPage2;
-             SonrakiSoruyuGoster();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -136,7 +137,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             }
             else
             {
-                pictureBoxSoruResmi.Image = null; 
+                pictureBoxSoruResmi.Image = null;
             }
 
             var secenekler = soru.Secenekler;

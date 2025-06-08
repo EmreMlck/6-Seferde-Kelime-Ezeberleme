@@ -63,29 +63,6 @@ namespace _6_Seferde_Kelime_Ezeberleme
                 return new List<KullaniciKelimeDurumu>();
             }
         }
-        public static List<Kelime> KelimeleriKullaniciDurumuylaYukle(string sozlukPath, string kullaniciJsonPath, int aktifKullaniciId)
-        {
-            // Sözlükten kelimeleri yükle
-            var kelimeListesi = KelimeleriYukle(sozlukPath);
-
-            // Kullanıcı kelime durumlarını yükle
-            var json = File.ReadAllText(kullaniciJsonPath);
-            var kullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
-
-            // Her kelimeye doğru sayısı ve son doğru tarihi ata
-            foreach (var kelime in kelimeListesi)
-            {
-                var durum = kullaniciKelimeleri
-                    .FirstOrDefault(x => x.kelimeId == kelime.kelimeId && x.kullaniciId == aktifKullaniciId);
-                if (durum != null)
-                {
-                    kelime.dogruSayisi = durum.dogruSayisi;
-                    kelime.sonDogruTarihi = durum.sonDogruTarihi;
-                    kelime.kullaniciKelimeId = durum.kullaniciKelimeId;
-                }
-            }
-            return kelimeListesi;
-        }
 
     }
 }

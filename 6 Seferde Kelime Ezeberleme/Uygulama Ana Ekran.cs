@@ -102,11 +102,11 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sınavModülü sinav = new sınavModülü(kullaniciAdi , kullaniciId );
+            int soruSayisi = KullanıcıAyarları.Ayarlar.SoruSayisi;
+            sınavModülü sinav = new sınavModülü(kullaniciAdi, kullaniciId, soruSayisi);
             sinav.Show();
             this.Hide();
             sinav.FormClosed += (s, args) => this.Show();
-            sinav.Show();
 
         }
 
@@ -114,6 +114,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             AyarlarModülü ayarForm = new AyarlarModülü();
             ayarForm.ShowDialog(); // Ayarlar formunu modal olarak aç
+
     
         }
     }

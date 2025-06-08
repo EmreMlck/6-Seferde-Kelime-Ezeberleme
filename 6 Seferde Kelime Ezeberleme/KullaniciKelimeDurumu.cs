@@ -37,31 +37,33 @@ public class KullaniciKelimeDurumu
 public static class KullaniciKelimeDurumuHelper
 {
     public static void KullaniciKelimeleriJsonGuncelle(
-      string connectionString,
-      string jsonPath,
-      List<Kelime> guncelKelimeler,
-      int aktifKullaniciId)
+        string connectionString,
+        string jsonPath,
+        List<Kelime> kelimeListesi,
+        int kullaniciId)
     {
-        var json = File.ReadAllText(jsonPath);
-        var kullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(json);
-
-        foreach (var kelime in guncelKelimeler)
+        using (var conn = new SqlConnection(connectionString))
         {
-            var kayit = kullaniciKelimeleri
-                .FirstOrDefault(x => x.kullaniciKelimeId == kelime.kullaniciKelimeId && x.kullaniciId == aktifKullaniciId);
-            if (kayit != null)
+            conn.Open();
+            foreach (var kelime in kelimeListesi)
             {
-                kayit.dogruSayisi = kelime.dogruSayisi;
-                kayit.sonDogruTarihi = kelime.sonDogruTarihi;
+                var cmd = new SqlCommand(
+                    @"UPDATE KullaniciKelimeleri 
+                      SET dogruSayisi=@dogruSayisi, 
+                          sonDogruTarihi=@sonDogruTarihi, 
+                          ogrenildiMi=@ogrenildiMi 
+                      WHERE kullaniciKelimeleriId=@kullaniciKelimeleriId AND kullaniciId=@kullaniciId", conn);
+
+                cmd.Parameters.AddWithValue("@dogruSayisi", kelime.dogruSayisi);
+                cmd.Parameters.AddWithValue("@sonDogruTarihi", (object)kelime.sonDogruTarihi ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@ogrenildiMi", kelime.ogrenildiMi);
+                cmd.Parameters.AddWithValue("@kullaniciKelimeleriId", kelime.kullaniciKelimeId);
+                cmd.Parameters.AddWithValue("@kullaniciId", kullaniciId);
+
+                cmd.ExecuteNonQuery();
             }
         }
-
-        File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
     }
-
-
-
-
 }
 
 

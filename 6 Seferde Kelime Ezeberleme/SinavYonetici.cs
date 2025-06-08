@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Windows.Forms;
 using static _6_Seferde_Kelime_Ezeberleme.KullanıcıAyarları;
+using System.Data.SqlTypes;
 
 namespace _6_Seferde_Kelime_Ezeberleme
 {
@@ -35,7 +36,6 @@ namespace _6_Seferde_Kelime_Ezeberleme
 
             // Sadece aktif kullanıcıya ait olanlar:
             var aktifKullaniciKelimeleri = kullaniciKelimeleri.Where(x => x.kullaniciId == aktifKullaniciId).ToList();
-            // ... önceki kodlar ...
             // ... önceki kodlar ...
             bool yeniKelimeEklendi = false;
             foreach (var kelime in kelimeler)
@@ -68,7 +68,7 @@ namespace _6_Seferde_Kelime_Ezeberleme
             {
                 File.WriteAllText(jsonPath, JsonConvert.SerializeObject(kullaniciKelimeleri, Formatting.Indented));
             }
-
+  
         }
 
 
@@ -131,38 +131,66 @@ namespace _6_Seferde_Kelime_Ezeberleme
         {
             try
             {
-                string jsonPath = "kullanici_kelimeleri.json";
-                var eskiVeriler = new List<KullaniciKelimeDurumu>();
+                // Doğru cevaplanan kullaniciKelimeId'leri al
+                var guncellenecekIdler = DogruCevaplananKullaniciKelimeIdler;
 
-                // Dosya varsa oku
-                if (File.Exists(jsonPath))
-                {
-                    string eskiJson = File.ReadAllText(jsonPath);
-                    eskiVeriler = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(eskiJson);
-                }
+                // JSON dosyasını oku (tüm kullanıcı kelimeleri)
+                string jsonPath = @"C:\Users\Ercüment Kocaoğlu\Source\Repos\6-Seferde-Kelime-Ezeberleme\6 Seferde Kelime Ezeberleme\kullanici_kelimeleri.json";
 
-                // Sınavda kullanılan kelimeleri güncelle
-                foreach (var kelime in kelimeListesi)
+                var tumKullaniciKelimeleri = JsonConvert.DeserializeObject<List<KullaniciKelimeDurumu>>(File.ReadAllText(jsonPath));
+
+                foreach (int id in guncellenecekIdler)
                 {
-                    var kayit = eskiVeriler.FirstOrDefault(x => x.kullaniciKelimeId == kelime.kullaniciKelimeId && x.kullaniciId == kullaniciId);
-                    if (kayit != null)
+                    var kelime = tumKullaniciKelimeleri.FirstOrDefault(x => x.kullaniciKelimeId == id);
+                    if (kelime != null)
                     {
-                        kayit.dogruSayisi = kelime.dogruSayisi;
-                        kayit.sonDogruTarihi = kelime.sonDogruTarihi;
-                        kayit.ogrenildiMi = kelime.ogrenildiMi;
+                        kelime.dogruSayisi++;
+                        kelime.sonDogruTarihi = DateTime.Now;
+                        if (kelime.dogruSayisi >= 6)
+                            kelime.ogrenildiMi = true;
+
+                        // digerTestTarihi güncelleme
+                        switch (kelime.dogruSayisi)
+                        {
+                            case 1:
+                                kelime.digerTestTarihi = DateTime.Now.AddDays(1);
+                                break;
+                            case 2:
+                                kelime.digerTestTarihi = DateTime.Now.AddDays(7);
+                                break;
+                            case 3:
+                                kelime.digerTestTarihi = DateTime.Now.AddMonths(1);
+                                break;
+                            case 4:
+                                kelime.digerTestTarihi = DateTime.Now.AddMonths(3);
+                                break;
+                            case 5:
+                                kelime.digerTestTarihi = DateTime.Now.AddMonths(6);
+                                break;
+                            case 6:
+                                kelime.digerTestTarihi = DateTime.Now.AddYears(1);
+                                break;
+                            default:
+                                kelime.digerTestTarihi = null;
+                                break;
+                        }
                     }
                 }
 
-                // Tüm veriyi tekrar yaz (sadece güncellenenler değişir, diğerleri aynen kalır)
-                File.WriteAllText(jsonPath, JsonConvert.SerializeObject(eskiVeriler, Formatting.Indented));
+                // Güncellenmiş listeyi tekrar JSON dosyasına yaz
+                File.WriteAllText(jsonPath, JsonConvert.SerializeObject(tumKullaniciKelimeleri, Formatting.Indented));
+                KelimeSenkranizasyonu.KullaniciKelimeleriniVeritabaninaYansit(tumKullaniciKelimeleri);
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Sınav sonu güncelleme sırasında hata oluştu:\n" + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+
     }
-
 }
-
 

@@ -47,7 +47,7 @@
             // 
             this.numericSoruSayisi.Location = new System.Drawing.Point(389, 70);
             this.numericSoruSayisi.Name = "numericSoruSayisi";
-            this.numericSoruSayisi.Size = new System.Drawing.Size(30, 20);
+            this.numericSoruSayisi.Size = new System.Drawing.Size(37, 20);
             this.numericSoruSayisi.TabIndex = 1;
             this.numericSoruSayisi.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 

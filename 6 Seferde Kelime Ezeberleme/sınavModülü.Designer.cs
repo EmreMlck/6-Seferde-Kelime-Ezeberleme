@@ -32,16 +32,19 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.tekrarQuiz = new System.Windows.Forms.Button();
             this.gunlukQuiz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBoxSoruResmi = new System.Windows.Forms.PictureBox();
+            this.buttonSonraki = new System.Windows.Forms.Button();
+            this.labelSayac = new System.Windows.Forms.Label();
             this.rBD = new System.Windows.Forms.RadioButton();
             this.rBC = new System.Windows.Forms.RadioButton();
             this.rBB = new System.Windows.Forms.RadioButton();
             this.rBA = new System.Windows.Forms.RadioButton();
             this.labelSoru = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.buttonSonraki1 = new System.Windows.Forms.Button();
             this.rBD1 = new System.Windows.Forms.RadioButton();
             this.rBC1 = new System.Windows.Forms.RadioButton();
             this.rBB1 = new System.Windows.Forms.RadioButton();
@@ -49,15 +52,11 @@
             this.labelSoru1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.labelSayac = new System.Windows.Forms.Label();
-            this.buttonSonraki = new System.Windows.Forms.Button();
-            this.buttonSonraki1 = new System.Windows.Forms.Button();
-            this.pictureBoxSoruResmi = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSoruResmi)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -68,20 +67,19 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 452);
+            this.tabControl1.Size = new System.Drawing.Size(803, 452);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Highlight;
             this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.tekrarQuiz);
             this.tabPage1.Controls.Add(this.gunlukQuiz);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 426);
+            this.tabPage1.Size = new System.Drawing.Size(795, 426);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quizler";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -98,39 +96,27 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // tekrarQuiz
-            // 
-            this.tekrarQuiz.BackColor = System.Drawing.Color.LightGray;
-            this.tekrarQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tekrarQuiz.Location = new System.Drawing.Point(264, 269);
-            this.tekrarQuiz.Name = "tekrarQuiz";
-            this.tekrarQuiz.Size = new System.Drawing.Size(255, 115);
-            this.tekrarQuiz.TabIndex = 2;
-            this.tekrarQuiz.Text = "Tekrar Quizi";
-            this.tekrarQuiz.UseVisualStyleBackColor = false;
-            this.tekrarQuiz.Click += new System.EventHandler(this.tekrarQuiz_Click);
-            // 
             // gunlukQuiz
             // 
             this.gunlukQuiz.BackColor = System.Drawing.Color.LightGray;
             this.gunlukQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gunlukQuiz.Location = new System.Drawing.Point(264, 125);
+            this.gunlukQuiz.Location = new System.Drawing.Point(253, 195);
             this.gunlukQuiz.Name = "gunlukQuiz";
             this.gunlukQuiz.Size = new System.Drawing.Size(255, 114);
             this.gunlukQuiz.TabIndex = 1;
-            this.gunlukQuiz.Text = "Günlük Quiz";
+            this.gunlukQuiz.Text = "Quizi Başlat";
             this.gunlukQuiz.UseVisualStyleBackColor = false;
             this.gunlukQuiz.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(297, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(294, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 46);
+            this.label1.Size = new System.Drawing.Size(178, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "QUİZLER";
+            this.label1.Text = "QUİZ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -149,10 +135,39 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 426);
+            this.tabPage2.Size = new System.Drawing.Size(759, 412);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Günlük Quiz";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // pictureBoxSoruResmi
+            // 
+            this.pictureBoxSoruResmi.Location = new System.Drawing.Point(98, 6);
+            this.pictureBoxSoruResmi.Name = "pictureBoxSoruResmi";
+            this.pictureBoxSoruResmi.Size = new System.Drawing.Size(199, 136);
+            this.pictureBoxSoruResmi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSoruResmi.TabIndex = 8;
+            this.pictureBoxSoruResmi.TabStop = false;
+            // 
+            // buttonSonraki
+            // 
+            this.buttonSonraki.BackColor = System.Drawing.Color.LightGray;
+            this.buttonSonraki.Location = new System.Drawing.Point(552, 356);
+            this.buttonSonraki.Name = "buttonSonraki";
+            this.buttonSonraki.Size = new System.Drawing.Size(161, 33);
+            this.buttonSonraki.TabIndex = 7;
+            this.buttonSonraki.Text = "Sonraki Soru";
+            this.buttonSonraki.UseVisualStyleBackColor = false;
+            this.buttonSonraki.Click += new System.EventHandler(this.buttonSonraki_Click);
+            // 
+            // labelSayac
+            // 
+            this.labelSayac.Location = new System.Drawing.Point(509, 3);
+            this.labelSayac.Name = "labelSayac";
+            this.labelSayac.Size = new System.Drawing.Size(275, 38);
+            this.labelSayac.TabIndex = 6;
+            this.labelSayac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSayac.Click += new System.EventHandler(this.labelSayac_Click);
             // 
             // rBD
             // 
@@ -228,6 +243,17 @@
             this.tabPage3.Text = "Tekrar Quizi";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // buttonSonraki1
+            // 
+            this.buttonSonraki1.BackColor = System.Drawing.Color.LightGray;
+            this.buttonSonraki1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonSonraki1.Location = new System.Drawing.Point(564, 350);
+            this.buttonSonraki1.Name = "buttonSonraki1";
+            this.buttonSonraki1.Size = new System.Drawing.Size(161, 33);
+            this.buttonSonraki1.TabIndex = 10;
+            this.buttonSonraki1.Text = "Sonraki Soru";
+            this.buttonSonraki1.UseVisualStyleBackColor = false;
+            // 
             // rBD1
             // 
             this.rBD1.AutoSize = true;
@@ -291,46 +317,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // labelSayac
-            // 
-            this.labelSayac.Location = new System.Drawing.Point(509, 3);
-            this.labelSayac.Name = "labelSayac";
-            this.labelSayac.Size = new System.Drawing.Size(275, 38);
-            this.labelSayac.TabIndex = 6;
-            this.labelSayac.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSayac.Click += new System.EventHandler(this.labelSayac_Click);
-            // 
-            // buttonSonraki
-            // 
-            this.buttonSonraki.BackColor = System.Drawing.Color.LightGray;
-            this.buttonSonraki.Location = new System.Drawing.Point(552, 356);
-            this.buttonSonraki.Name = "buttonSonraki";
-            this.buttonSonraki.Size = new System.Drawing.Size(161, 33);
-            this.buttonSonraki.TabIndex = 7;
-            this.buttonSonraki.Text = "Sonraki Soru";
-            this.buttonSonraki.UseVisualStyleBackColor = false;
-            this.buttonSonraki.Click += new System.EventHandler(this.buttonSonraki_Click);
-            // 
-            // buttonSonraki1
-            // 
-            this.buttonSonraki1.BackColor = System.Drawing.Color.LightGray;
-            this.buttonSonraki1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonSonraki1.Location = new System.Drawing.Point(564, 350);
-            this.buttonSonraki1.Name = "buttonSonraki1";
-            this.buttonSonraki1.Size = new System.Drawing.Size(161, 33);
-            this.buttonSonraki1.TabIndex = 10;
-            this.buttonSonraki1.Text = "Sonraki Soru";
-            this.buttonSonraki1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBoxSoruResmi
-            // 
-            this.pictureBoxSoruResmi.Location = new System.Drawing.Point(98, 6);
-            this.pictureBoxSoruResmi.Name = "pictureBoxSoruResmi";
-            this.pictureBoxSoruResmi.Size = new System.Drawing.Size(199, 136);
-            this.pictureBoxSoruResmi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSoruResmi.TabIndex = 8;
-            this.pictureBoxSoruResmi.TabStop = false;
-            // 
             // sınavModülü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,9 +330,9 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSoruResmi)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSoruResmi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,7 +346,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button gunlukQuiz;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button tekrarQuiz;
         private System.Windows.Forms.Label labelSoru;
         private System.Windows.Forms.RadioButton rBD;
         private System.Windows.Forms.RadioButton rBC;
