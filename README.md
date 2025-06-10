@@ -12,6 +12,7 @@ Kelimeler 6 tekrar ile kullanıcıya gösterilir ve bu şekilde daha iyi bir ezb
 - 6 tekrar kuralına göre kelime gösterimi ve sınav modülü
 - Veritabanı veya dosya üzerinden kelime listesi kullanma
 - Ezber durumu takibi ve gelişim gösterimi
+- Wordle oyunu
 
 ## Kullanılan Teknolojiler
 
